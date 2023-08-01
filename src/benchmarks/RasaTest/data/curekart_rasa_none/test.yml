@@ -1,0 +1,502 @@
+version: "3.1"
+
+nlu:
+- intent: ORDER_TAKING
+  examples: |
+    - Order my product
+    - Place an order
+    - How to place order
+    - Can you please send me two bottles of Sorjio powder on COD basis ?
+    - How can i order
+    - How can i place a order
+    - I want to order
+    - How and where to place my order?
+    - I want to place order for a product
+    - How to place order for 30  tablets ? It is not allowing me to order on COD.
+    - How do I place the order?
+    - Cod is available
+    - Dont worry.it will be a prepaid percel
+    - CAN I pay online for my COD order?
+    - I want to pay for my COD order.
+    - How can I order product
+    - How can I place my order
+    - Can i do COD ??
+    - I want cod
+- intent: RECOMMEND_PRODUCT
+  examples: |
+    - I want to order Wottle sensitive handwash refill
+    - I need Beginners hair multivitamin
+    - Right now my weight is less, how much weight can I gain by taking it?
+    - CureKart immunity tablets
+    - What kind of gelatin you are using in omega 3. Is it halal?
+    - Which is the best whey protein
+    - How to buy
+    - What offer on 1199 whey protein
+    - Home gym 30 kg rubber weigh set available
+    - I want to buy this product
+    - Can I get half kg of dark chocolate peanut butter spread
+    - Want to buy a product
+    - I want to purchase some gym equipment
+    - I am looking for Dumbbells
+    - How can i buy this product
+    - Which is best whey protein
+    - I need the best whey protein
+    - Can i get rivamal 120 ml at my home
+    - I am looking for dumble
+    - I want to gain weight what us best for me
+    - I need 10kg dumb bells
+    - Ok and l want to by product
+    - I want vitozit
+    - Hi, looking for home gym combo
+    - Need to the best plant based organic protein powder
+    - I want to gain mass
+    - I need organic i ndia tea
+    - Looking adjustable dumbbell
+    - How do I buy vitamin shoppe fish oil?
+    - I wanted to buy Home gym
+    - Best price sambroda muscle mass gainer
+    - Home equipment
+    - I need a combo of gym equipment with dumbles and barbell
+    - how weight gainer is differnt from mass gainer
+    - I want Power Nectar gel tablets
+    - hi want to know about Protinix protein
+    - Doing excessive to build muscle
+    - I want to buy Alivea home gym
+    - I want sugar free protein whey
+    - It is sure we can gain weight and muscles tight
+    - My weight is 65kg .is it better to take mass gainer
+    - Hello sir  I want to gain weight and muscular body is this powder helpful  ?
+    - I want fixelet resistance tube
+    - Product Recommendations
+    - I'm look for 20kg dumbels
+    - I want 50kg Crossethon kit
+    - sir 1 Creatine
+    - CureKart biotin
+    - Wei8 nutrition lean mass 35g
+    - Show products for Lean
+    - Wigzin 270 I would like to buy
+    - I want chocolate quoreez peanut butter
+    - I want a weight gainer
+    - I am 17 year old can I take protein
+    - How much it takes to gain mass in good quantity
+    - Body Gainz 50Kg Rubber Weight Plates Home Gym Fitness Package 4 Rods Gym Bag and Gym Accessories
+    - My age is 40. Need suppliment for mussels
+    - I want to grow my body
+    - Which one is better musclebuild biozyme or musclebuild bold
+    - Need multivitamin
+    - Folodys 40 kg home gym
+    - I want to weight loss than which product will be helpful for me kindly guide me about the product. How much it is beneficial...
+    - Sir woman fat burner price
+    - I want wrist cum palm support for general , knew support, use of amino acid, b protein for women, posture corrector
+    - Chep Protein
+    - Want to buy
+    - Can it help to gain weight
+    - I am athlete so which protein powder I intake
+    - Looking for ichpure but this much be the old stock
+    - Want to buy gluco card 01 sensor strips
+    - Show products for Heart Care
+    - I want to loose my weight as I am a working women.
+    - i want to know about sambroda mass gainer
+    - I want to know which product is best for weight loss for women
+    - Sportan Fitness Let Pull Square Home Gym
+    - Multi vitamins are made from herbs and vegetables
+    - I want chocolate flavour quoreez peanut butter
+    - How can i grow my body
+    - Need swiftlens prosthtic lens
+    - Show products for Weight Management
+    - Help with product
+    - Weight grain
+    - I want chocolate flavour peanut butter
+    - Confused about size
+    - This is good product for weight gain
+    - I want to buy this product.
+    - I need omega 3 fatty acid. Which is the best?
+    - Which is best if working out at home Masx gainer or Whey Protein
+    - I need a apple cider vinegar to reduce belly fat, which one is best
+    - I want weight loss inch capsules
+    - I need a modiyos weights kit
+    - which whey protein is best
+    - what u recommend for best multivitamin
+    - I want to buy home gym set
+    - Tell me about omega-3 capsules
+    - When can I get biotin?
+    - Need a quick fat burner
+    - Weight loss protein
+    - Ich sensation protein
+    - Hey i am 18 year old n im tryn to loose body weight so recammend  me gud supp which will help in fat loos
+    - Went to purchase this product
+    - Multitab Silver
+    - I was looking to buy a product but I am little confused
+    - Sir I am so weak my age is 17 years how can I gain weight
+    - Is ashvagandha gain my waight
+    - I was need gym stuff
+    - Want to order glimzy roll
+    - I require Triocin 150mgtab 20 nos and lufsith ear drops 1
+    - Combo gym set
+    - Any one can use calcium tablets
+    - I need dumbells of 2.5 kg
+    - i want capsule for increase my size
+    - Show me cheapest whey protein
+    - I want to purchase shavellete sensor Excell blades
+    - My frnds recomand ichpure low carb and ich sensation 93 for waight loss
+    - I need this on shaker bottle
+    - I required nepro hp
+    - What is best product for weight gain
+    - Sir am a bigner
+    - i am a beginner. and i have some gym products at home. i do exercise at home but not so hard.
+    - Hi, I am looking for home gym equipment
+    - Vytal supplements
+    - There is any supplement to protect hair loss without any side effect
+    - Mushulk 5 kg whey protein price
+    - Which is best glutathione
+    - Why I am not able to find curekart beginners multivitamin 90tablets  for men
+    - Clear muscel product
+    - Hello sir immunity plus purchases
+    - Best supplement for teenage girl 1717age
+    - Hi need one kit
+    - How to used bt mass gainer
+    - Hii...plz recommend me best fat burner product
+    - Hi can I know the use of glutathione
+    - Whey protein
+    - I want gain weight
+    - My.fast porotin
+    - Want to.take a protein powder fr my weight loss
+    - Is there any gym kit for home
+    - Which protein is best for the age of 18
+    - Show products for Bulk
+    - if i want to cut my fat and want to build muscle should i take creatine
+    - Need gainer
+    - I want a glutamine
+    - Multivitamin tablet
+    - Best for men hair
+    - Need fish oil
+    - Required whey protein
+    - i would buy weight gain pills or supplyment for women
+    - Can i eat l arginine
+    - Hi I need a home gym
+    - I would like to buy Burkhland signature calcium citrate
+    - Hi , I am looking for home gym
+    - I want to know everything about ichpure
+    - Does product really reduce weight
+    - which protein i have used my muscle clarity gained and fat loss all in one suggest me
+    - I want to purchase a thermocut
+    - My weight is 64 I'm increase in 30 kg
+    - Hi , I am looking for home gym set
+    - I have some of the Hirokeen capsules & would like to buy more : can you supply the Mega Power capsules to Australia? Thank you, Aaron D'souza
+    - i wamt rod for gymming
+    - i want to buy a health drink
+    - I need DELITE MASS MUSCLE GAINER (DOUBLE RICH CHOCOLATE FLAVOR) 10.16 LBS
+    - I want to buy a product
+    - How to weight gain
+    - Do you have GO casein protein ?
+    - hlo i want to gain mass can u please help me out
+    - My whight is 65 kg
+    - I want 8712 Tamron bp monitor
+    - Please help me I need a best mass gainer
+    - Can I get Gonix as30
+    - which product helps to gain muscle??
+    - want a medicine
+    - Hi I want to become bulk
+    - hair loss
+    - i need product
+    - Bt mass gainer XXL I'm already 94 kg
+    - I'm 94 kg but not a muscular body .. what you recommend for me..
+    - whey
+    - weight gain
+    - hi how to use bt protein
+    - U have pureol biotin 10000mcg
+    - Which protein is better for me
+    - Do u have bp apparatus?
+    - Need supper gummy  zinc and vitamins
+    - Will this product help for building huge muscular body
+    - I wnt to lose my weight
+    - XxX mass gainer
+    - I want to buy the product
+    - How to gain weight
+    - I am 82 years old... I want to buy melatonin 10mg..can you suggest a good producr
+    - I want to get information about heavy mass
+    - For increasing fat which products will good for me
+    - Weights loss
+    - Hair 4care %
+    - I need preworkout
+    - My age is 25 year and wight 49kg so which is best supliment for me
+    - Supplement for 15 year old boy
+    - Show products for Athletic
+    - I need optiquick powder
+    - 4kg dumbbells are available?
+    - Regarding a product
+    - Home gym
+    - This is protein powder
+    - Want vichy ideal white
+    - I want home gym workout equipment
+- intent: CHECK_PINCODE
+  examples: |
+    - have u started C D provision for pin code 702164
+    - Hi I'm trying to order some stuff but ut says it cannot be delivered to my pin code.
+    - I want rivamal 120 ml in asansol west bengal
+    - Do you deliver in vidisha (M.P.) 7021645199
+    - Why service is not available in my pin code no 7021645199
+    - Is it deliverable to Paris ?
+    - Do you have door delivery in Cochin ?
+    - My pin code available
+    - Why are you not delivering in my pincode
+    - My pincode is 7021645199
+    - CureKart not delivering product in my location
+    - Hi... The product in my cart says can't be delivered in my pincode ?? Can you help me out.
+    - Can u delivered to ramnagar uttarakhand
+    - Hi, do you deliver to Giddalur, Prakasam dist, AP
+    - Shipping in newzealand
+    - Hi how much it takes time to deliver this product at Kanpur 7021645199 (Body Gainz PVC Dumbells Sets BM-Combo-20, Black, 20 kg)?
+    - How much time, days will it take to deliver Nature made super saw palmetto in central delhi
+    - Delivery at pincode 7021645199
+    - is it available my location
+    - Can you deliver to 7021645199
+    - Do you have any delivery to srilanka
+    - Please keep delivery service to the pin code 7021645199
+- intent: ORDER_STATUS
+  examples: |
+    - My previous orders of garcenia combogia
+    - I want 2 track my order
+    - May i know when it will be dilivered
+    - When will I get my order?
+    - Where it is exactly reached
+    - Can I Get My Order Tomorrow
+    - When I get my order
+    - My place is in containment zone will i still get the product on the predicted delivery date
+    - It shows that this product can not be delivered at 7021645199 right now.Plz let me inform when it will be possible. Thank u
+    - Were s my order
+    - Delivered when
+    - Tracking my order
+- intent: CHAT_WITH_AGENT
+  examples: |
+    - Chat with an Agent
+    - I want talk
+    - need to chat with a representative
+    - U r giving pathetic service it was prepaid order only
+    - Contact
+    - Can I talk to your coustmer executive
+    - U all are useless
+    - This number is invalid
+    - Chat agent
+    - Is this normal with ths product or should I chat with an expert
+    - Your service is  pathetic
+    - Useless
+    - Waste of time
+    - complaint
+- intent: DELAY_IN_PARCEL
+  examples: |
+    - The order not yet delivery
+    - We got the message product is delivered but it is not delivered
+    - I didn't receive my order
+    - My product was supposed to be delivered yesterday...but i havent recieved it
+    - U guys don't deliver in time
+    - order not received
+    - But order was shipped the same day and now am stuck with waiting till the end of the month without supply
+    - how much time taken to deliver products
+    - How can I contact if I did not receive my order but got message that your order is delivered
+    - Hey I didn’t receive the ordered product its incomplete
+- intent: SIGN_UP
+  examples: |
+    - Where to sign up
+    - yes i am new
+    - I am a first time user
+- intent: RESUME_DELIVERY
+  examples: |
+    - When can I get spectrazole delivered at home
+    - Ok I need delivery tomorrow
+    - Home delivery available ?
+    - In west bengal, are you delivering the products in durgapur
+    - Can i get delivery before 11am
+    - Can I get delivery of gym equipments
+    - Can i get it today??
+    - How much time take to product deliver
+    - I you will deliver it tomorrow
+- intent: SIDE_EFFECT
+  examples: |
+    - Any side effects
+    - Is there any side effect
+    - Hi actually may I know is there any side effects of this protein
+    - Any side effects sir
+    - any adverse side effects to using whey protein
+- intent: CANCEL_ORDER
+  examples: |
+    - How to cancel order
+    - Can you cancel my order
+    - Cancel an order
+    - cancel product
+    - Plzzz cancelled my order
+    - cancel oder
+    - I cancel my order
+    - I want to cancle my product
+    - i wan't cancel my 1st Order
+    - Please cancel my order
+    - My order is being delivered very late so I want to cancel it
+    - 𝓘 𝔀𝓪𝓷𝓽 𝓬𝓪𝓷𝓬𝓵𝓮 𝓸𝓻𝓭𝓮𝓻
+    - "I need to cancel my order"
+    - Please cacel my order
+    - I would like to cancel my ordee
+    - I can cancel my order
+    - I just cancel my order
+    - Order cancel
+    - How to cancel my order
+    - i want cancel my order
+    - Plz cancel my all order
+    - I want to cancel my order now and reorder again
+    - Cancel the delivery
+    - My order cancel
+    - It would be better if i cancel and buy offline
+    - Please cancelled my order deyaled issue
+    - I want to cancel an order.
+    - Cancel my product
+    - Cancel order
+    - I want to cancel may order
+    - Cancel order
+    - Cancel my order please
+- intent: PAYMENT_AND_BILL
+  examples: |
+    - Order or Payment related query
+    - I just paid amount for some products but not visible in my orders
+    - I have query related to Payments & Bill
+- intent: EXPIRY_DATE
+  examples: |
+    - How do I know the expiration date of the product that I am going to purchase?
+    - Expire date
+    - expiry of product
+    - Could you  please tell me expire date
+    - Expire date
+    - Hi, what is the product expiry day
+    - How much this product is close to the expiry?
+    - I wanna confirm the expiry date of this product
+    - There's no expiry date printed on BT fuel one 2.2lb chocolate
+    - I want to know expiry date of my product
+    - I have to know the expiry date before buying
+    - How many days after fish oil capsules  expired
+    - What is the expiry date of the product
+- intent: ORIGINAL_PRODUCT
+  examples: |
+    - How do i know if protein is original
+    - How can i trust the authenticity
+    - Are all the supreme nutrition products genuine?
+    - Is there are real products
+    - Hi. Just want to know if these products are 100% genuine
+    - How to know if it is genuine
+    - How to check the product is original
+    - Authenticity
+    - I want to buy ich sensation 93.. but how will I know that what I am buying is not a fake product
+    - What if the product you delivered is duplicate
+    - How we know is this original??
+    - Original supplement
+    - Hi how to check its authenticity
+    - How to check authenticity of ON product
+    - How to find original product
+    - Are all the products genuine and have a hologram on the box??
+    - How can i believe it is original product?
+    - How to inditify product
+    - Authencity of product
+    - if ur product is fake will u take it back ?
+    - What if the product i receive is a duplicate product
+    - Is the products original?
+    - Is that Herbalife products in your app are authentic??
+    - How do I know protein is authentic
+    - How can i check my order it is original or not .. do you provide scan n check ?? Label on the product
+    - This protein is genuine or not?
+    - Muscle Hulk raw whey protein how to authentic
+    - How to check aunthentic or without authentic
+    - Is there any authticity mark on products
+    - I want to check authenticity of my product
+    - What if i fount a product is not authenticate
+    - How to verify my product
+    - Hey I just received my multivitamin curekart box but I have doubt whether it is real or fake product
+    - CureKart is a genuine product for sell
+    - What if I got a fake product
+    - Are the products are genuine like your store ...??
+    - Is it here trusted products
+    - Authenticity check
+    - how to know that you aren't selling fake product ?
+    - How can I check original product
+    - No i want MUSCLEFIT product are they authentic?? On your platform??
+    - And are importer  are genuine ??
+    - Is your product natural
+- intent: REFUNDS_RETURNS_REPLACEMENTS
+  examples: |
+    - I want to return myprotein product
+    - I want to return my last order
+    - 15 days replacement
+    - How I return my order delivery?
+    - I just want to know about return policy
+    - Please Refund & Repayment my product
+    - Return my order
+    - I want to know about my refund or replacement
+    - Need to return
+    - Want to return the product
+    - Please Replacement product. Product box not
+    - I would like to change my product
+    - Meal replacement
+    - If i. Cancel the order now then in how many days i will get the refund. I have dond payment through upi
+    - I want to back my money
+    - Return my order
+    - I want to return the product
+    - I want to return
+    - Retun my order
+    - Can I return after using it for few days and found it fake
+- intent: CONSULT_START
+  examples: |
+    - diet and fitness advice
+    - How much weight can be lost in  a month with this along with a proper diet plan
+    - In how many months we weight gain
+    - I just want a diet  chart. I have started gym 3 days before i want to gain mass
+    - Diet
+    - Hii I want to loss weight can u gave me diet plan
+    - DIET PLANE FOR LOSING WEIGHT
+    - I need a lean bulking diet
+    - diet plan for weight gain
+    - Dite plan
+    - Can u give me a diet chart, I am 47 years old, no medical problem want to loose fat
+    - diet plan
+    - Diet plan
+    - I want a diet chart
+    - Suggest me diet on weight loss
+    - Need a diet plan
+- intent: FRANCHISE
+  examples: |
+    - Become a seller
+    - I WANT TO SELL PRODUCTS IN CUREKART
+    - I want to sell my product
+    - how can i sell on curekart?
+    - Seller
+    - i have a product to sell on any well eminent e-commerce platform. Is it this platform awailable for me
+    - I want to sell on curekart
+    - i want to sell my product on curekart
+    - how to sell on curekart
+    - Hi i want to enroll my self as a seller
+    - How do i become a seller on curekart? Please guide
+    - how could I register as seller
+- intent: STORE_INFORMATION
+  examples: |
+    - Janak puri new delhi store is open or shut
+    - Can medicine be purchase physically from your centre
+    - Can I come visit?
+    - Any store in Kolkata?
+    - Bro is your shop open tomorrow
+    - Can I come tomorrow because I stay near the shop only near d mart
+    - CureKart store in kolkata
+    - Where is cure kart in greater Noida?
+    - Can I come tomorrow because I stay near the shop only near k mart
+    - So you guys have stores also???
+    - Do you have any store in Amritsar
+- intent: USER_GOAL_FORM
+  examples: |
+    - take my reassesment
+    - Take Re-assessment
+- intent: CALL_CENTER
+  examples: |
+    - Call me
+    - What is your customer care number?
+    - muzaffarpur hub contact number
+    - Customer care
+    - We want ur ph number
+- intent: MODIFY_ADDRESS
+  examples: |
+    - Hi Cure Kart i have ordered a product but address is wrong
+    - How to change address of placed order
+    - wrong address

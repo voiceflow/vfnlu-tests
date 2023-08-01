@@ -1,0 +1,209 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "64c97fde7a8e300007152e2d",
+    "name": "Two_Intents_Structure_demo",
+    "teamID": "KljxABM8nN",
+    "devVersion": "64c97fde09d04078840fe434",
+    "platform": "voiceflow",
+    "type": "chat",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "",
+    "customThemes": [],
+    "_version": 1.2,
+    "updatedAt": "2023-08-01T21:57:50.047Z",
+    "creatorID": 70616,
+    "updatedBy": 70616,
+    "apiPrivacy": "private",
+    "createdAt": "2023-08-01T21:57:50.000Z"
+  },
+  "version": {
+    "_id": "64c97fde09d04078840fe434",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {},
+      "platform": "voiceflow"
+    },
+    "_version": 4.03,
+    "name": "Initial Version",
+    "projectID": "64c97fde7a8e300007152e2d",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "64c97fde09d04078840fe435",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [],
+    "rootDiagramID": "64c97fde09d04078840fe435",
+    "creatorID": 70616,
+    "domains": [
+      {
+        "id": "clksubiff0ldi06ls5yb615b9",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64c97fde09d04078840fe435"
+        ],
+        "rootDiagramID": "64c97fde09d04078840fe435",
+        "updatedAt": "2023-08-01T21:58:55.103Z",
+        "updatedBy": 70616
+      }
+    ],
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Two_Intents_Structure_demo",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "64c97fde09d04078840fe435",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {},
+        "extraSlots": [],
+        "extraIntents": [],
+        "usedIntentsSet": [
+          "qe22w3koo",
+          "ez1zx3krn"
+        ],
+        "platform": "voiceflow",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": []
+      },
+      "settings": {},
+      "platform": "voiceflow"
+    }
+  },
+  "diagrams": {
+    "64c97fde09d04078840fe435": {
+      "_id": "64c97fde09d04078840fe435",
+      "offsetX": 302.9908936551516,
+      "offsetY": 137.4448574044576,
+      "zoom": 100,
+      "variables": [],
+      "name": "ROOT",
+      "versionID": "64c97fde09d04078840fe434",
+      "creatorID": 70616,
+      "modified": 1690927070,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            321.26138293106055,
+            78.19392824442801
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          385.89810859038664,
+                          100.19395159299899
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          445.5999390674715,
+                          100.19395159299899
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          445.5999390674715,
+                          54.938514940613715
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          505.3017695445564,
+                          54.938514940613715
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        }
+      },
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": []
+    }
+  },
+  "variableStates": []
+}
