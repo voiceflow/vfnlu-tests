@@ -32,7 +32,7 @@ def run_rasa_train_test(bench_mark_name:str,retrain=False,local_result_load=True
 	return f1, accuracy
 
 
-def run_rasa_benchmark(datasets,retrain=False,local_result_load=False,none_tests=True):
+def run_rasa_benchmark(datasets,retrain=True,local_result_load=False,none_tests=True):
 	f1_scores, accuracy_scores = [], []
 	for dataset in datasets:
 		f1, accuracy = run_rasa_train_test(dataset,retrain,local_result_load,none_tests)

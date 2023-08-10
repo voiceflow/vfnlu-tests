@@ -4,7 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 import requests
-
+from uuid import uuid4
 # View our quick start guide to get your API key:
 # https://www.voiceflow.com/api/dialog-manager#section/Quick-Start
 
@@ -12,6 +12,7 @@ load_dotenv()
 banking_api_key = os.getenv("BANKING_API_KEY")
 hwu_api_key = os.getenv("HWU_API_KEY")
 clinc_api_key = os.getenv("CLINC_API_KEY")
+curekart_api_key = os.getenv("CUREKART_API_KEY")
 
 import yaml
 def read_intents_from_rasa_test_file(file_path):
@@ -66,16 +67,17 @@ def run_vf_intent_test(intents_dict,api_key):
             actual_intents.append(intent)
             if intent == matched_intent:
                 correct += 1
-            print("real intent: " + intent," predicted intent: " +matched_intent, r['request']["payload"]["confidence"])
+            try:
+                print("real intent: " + intent," predicted intent: " +matched_intent, r['request']["payload"]["confidence"])
+
+            except Exception as e:
+                print(e)
 
     #f1 score
     from sklearn.metrics import f1_score
     return correct / total_utterances, f1_score(actual_intents, predicted_intents, average='macro')
 
 
-import aiohttp
-import asyncio
-from uuid import uuid4
 
 def run_vf_intent_test_rasa_file(file_path):
     intents = read_intents_from_rasa_test_file(file_path)
@@ -87,14 +89,20 @@ def run_vf_intent_test_nlu_format(file_path,api_key):
     return run_vf_intent_test(intents,api_key)
 
 
-def run_benchmark_vfnlu(datasets,local_result_load=True):
+def run_benchmark_vfnlu(datasets,local_result_load=False,none_tests=True):
+    if not none_tests:
+        f1_scores = [0, 0, 0,0]  # 0.3752362810038506
+        accuracy_scores = [0.941, 0.863, 0.863,0.806]  # 0.5317860746720484
+        return f1_scores, accuracy_scores
     if local_result_load:
-        f1_scores = [0.9022871900713476, 0.8150565317645434, 0.8067784206093752]
-        accuracy_scores = [0.9052044609665427, 0.8150565317645434, 0.8133116883116883]
+        f1_scores = [0.9022871900713476, 0.8150565317645434, 0.8067784206093752,  0.5624212155271786] #0.3752362810038506
+        accuracy_scores = [0.9052044609665427, 0.8150565317645434, 0.8133116883116883,0.7145969498910676 ] # 0.5317860746720484
         return f1_scores, accuracy_scores
     f1_scores = []
     accuracy_scores = []
-    for dataset, key in zip(datasets, [hwu_api_key,clinc_api_key,banking_api_key]):
+    keys = [hwu_api_key,clinc_api_key,banking_api_key,curekart_api_key][:len(datasets)]
+    keys = [curekart_api_key]
+    for dataset, key in zip(datasets,keys):
         accuracy,f1 = run_vf_intent_test_nlu_format(f"./VFNLUTests/data/{dataset}/test",key)
         print("Accuracy", accuracy)
         print("F1 Score: ",f1)

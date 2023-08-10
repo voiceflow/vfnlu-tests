@@ -1,0 +1,3894 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "64c97fde7a8e300007152e2d",
+    "name": "curekart",
+    "teamID": "KljxABM8nN",
+    "devVersion": "64c97fde09d04078840fe434",
+    "platform": "voiceflow",
+    "type": "chat",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "",
+    "customThemes": [],
+    "_version": 1.2,
+    "updatedAt": "2023-08-01T21:57:50.047Z",
+    "creatorID": 70616,
+    "updatedBy": 70616,
+    "apiPrivacy": "private",
+    "createdAt": "2023-08-01T21:57:50.000Z"
+  },
+  "version": {
+    "_id": "64c97fde09d04078840fe434",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "dc708374",
+          "name": "CALL_CENTER",
+          "inputs": [
+            {
+              "text": "What time is your call centre operational during COVID?",
+              "slots": []
+            },
+            {
+              "text": "is the call center still functioning during lockdown",
+              "slots": []
+            },
+            {
+              "text": "what are the working hours of your call center during covid lockdown",
+              "slots": []
+            },
+            {
+              "text": "does covid affext your call center time",
+              "slots": []
+            },
+            {
+              "text": "is your call center working during covid?",
+              "slots": []
+            },
+            {
+              "text": "when can i call the call center during coronvirus lockdown",
+              "slots": []
+            },
+            {
+              "text": "what is the time when call center is working",
+              "slots": []
+            },
+            {
+              "text": "Contact Call Center",
+              "slots": []
+            },
+            {
+              "text": "what time are you guys open",
+              "slots": []
+            },
+            {
+              "text": "I want to call your call centre",
+              "slots": []
+            },
+            {
+              "text": "Toll Free Number",
+              "slots": []
+            },
+            {
+              "text": "Customer care number",
+              "slots": []
+            },
+            {
+              "text": "pls give me customer care no",
+              "slots": []
+            },
+            {
+              "text": "want to contact your customer care number send me",
+              "slots": []
+            },
+            {
+              "text": "Consumer care number",
+              "slots": []
+            },
+            {
+              "text": "where do I call you",
+              "slots": []
+            },
+            {
+              "text": "i want to get in touch",
+              "slots": []
+            },
+            {
+              "text": "I want your number",
+              "slots": []
+            },
+            {
+              "text": "i want your contact number where I can call you",
+              "slots": []
+            },
+            {
+              "text": "your contact number",
+              "slots": []
+            },
+            {
+              "text": "How do I Reach you guys",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "b754ef2f",
+          "name": "CANCEL_ORDER",
+          "inputs": [
+            {
+              "text": "I'd like to cancel my pending order",
+              "slots": []
+            },
+            {
+              "text": "How can I cancel my pending order?",
+              "slots": []
+            },
+            {
+              "text": "Kindly cancel my order",
+              "slots": []
+            },
+            {
+              "text": "I want to cancel my placed order",
+              "slots": []
+            },
+            {
+              "text": "Cancellation",
+              "slots": []
+            },
+            {
+              "text": "I want to place cancellation",
+              "slots": []
+            },
+            {
+              "text": "How can i cancel my order?",
+              "slots": []
+            },
+            {
+              "text": "cancel",
+              "slots": []
+            },
+            {
+              "text": "Cancel my order",
+              "slots": []
+            },
+            {
+              "text": "Cancelling",
+              "slots": []
+            },
+            {
+              "text": "I want to cancel a product",
+              "slots": []
+            },
+            {
+              "text": "I want to cancel my order",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "5fe97656",
+          "name": "CHAT_WITH_AGENT",
+          "inputs": [
+            {
+              "text": "Chat with agent",
+              "slots": []
+            },
+            {
+              "text": "I need customer support",
+              "slots": []
+            },
+            {
+              "text": "I want to chat with an agent",
+              "slots": []
+            },
+            {
+              "text": "I need to talk to someone",
+              "slots": []
+            },
+            {
+              "text": "You guys are fraud",
+              "slots": []
+            },
+            {
+              "text": "I want to speak with a human",
+              "slots": []
+            },
+            {
+              "text": "I want to raise a complaint",
+              "slots": []
+            },
+            {
+              "text": "Your delivery service is always slow I am done with CureKart",
+              "slots": []
+            },
+            {
+              "text": "hello, is ther anyone available to assist",
+              "slots": []
+            },
+            {
+              "text": "contact support",
+              "slots": []
+            },
+            {
+              "text": "Customer care number not available",
+              "slots": []
+            },
+            {
+              "text": "call center unavailable",
+              "slots": []
+            },
+            {
+              "text": "call center not reachable",
+              "slots": []
+            },
+            {
+              "text": "Call centre not picking up",
+              "slots": []
+            },
+            {
+              "text": "No one is answering",
+              "slots": []
+            },
+            {
+              "text": "pathetic service",
+              "slots": []
+            },
+            {
+              "text": "I want to complain",
+              "slots": []
+            },
+            {
+              "text": "How to complaint",
+              "slots": []
+            },
+            {
+              "text": "You are useless",
+              "slots": []
+            },
+            {
+              "text": "Poor service",
+              "slots": []
+            },
+            {
+              "text": "poor customer support",
+              "slots": []
+            },
+            {
+              "text": "Waste of my time",
+              "slots": []
+            },
+            {
+              "text": "Bad Service",
+              "slots": []
+            },
+            {
+              "text": "Can i talk to a human",
+              "slots": []
+            },
+            {
+              "text": "Could I chat with a human please",
+              "slots": []
+            },
+            {
+              "text": "Live agent",
+              "slots": []
+            },
+            {
+              "text": "live person to talk",
+              "slots": []
+            },
+            {
+              "text": "I want to speak with a live agent",
+              "slots": []
+            },
+            {
+              "text": "real person available",
+              "slots": []
+            },
+            {
+              "text": "human to answer",
+              "slots": []
+            },
+            {
+              "text": "connect me to supervisor",
+              "slots": []
+            },
+            {
+              "text": "Give immediate resolution",
+              "slots": []
+            },
+            {
+              "text": "I need urgent assistance",
+              "slots": []
+            },
+            {
+              "text": "need an immediate fix to my problem",
+              "slots": []
+            },
+            {
+              "text": "This is urgent",
+              "slots": []
+            },
+            {
+              "text": "This is extremely urgent",
+              "slots": []
+            },
+            {
+              "text": "This is an emergency",
+              "slots": []
+            },
+            {
+              "text": "Talk",
+              "slots": []
+            },
+            {
+              "text": "Talk to agent",
+              "slots": []
+            },
+            {
+              "text": "I want to talk to your executive",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "70b40c06",
+          "name": "CONSULT_START",
+          "inputs": [
+            {
+              "text": "Tell me weight gaining",
+              "slots": []
+            },
+            {
+              "text": "Consult Start",
+              "slots": []
+            },
+            {
+              "text": "suggest me beginner diet",
+              "slots": []
+            },
+            {
+              "text": "can you make my ideal diet plan ?",
+              "slots": []
+            },
+            {
+              "text": "Get Diet & Fitness Advice",
+              "slots": []
+            },
+            {
+              "text": "Diet plan for runner",
+              "slots": []
+            },
+            {
+              "text": "Advice a diet chart",
+              "slots": []
+            },
+            {
+              "text": "Recommend me workout schedule diet and protein",
+              "slots": []
+            },
+            {
+              "text": "Hi i am looking for diet chart",
+              "slots": []
+            },
+            {
+              "text": "Hii I am looking for lean muscle body advice me diet chart",
+              "slots": []
+            },
+            {
+              "text": "Can u provide fitness advice ?",
+              "slots": []
+            },
+            {
+              "text": "Diet",
+              "slots": []
+            },
+            {
+              "text": "Muscle diet",
+              "slots": []
+            },
+            {
+              "text": "Bodybuilding diet",
+              "slots": []
+            },
+            {
+              "text": "Weight Loss diet",
+              "slots": []
+            },
+            {
+              "text": "Workout plan",
+              "slots": []
+            },
+            {
+              "text": "Diet plan",
+              "slots": []
+            },
+            {
+              "text": "Diet and Fitness Advice for Bulk Muscle Gain",
+              "slots": []
+            },
+            {
+              "text": "Diet and Fitness Advice for Lean Muscle Gain",
+              "slots": []
+            },
+            {
+              "text": "Diet and Fitness Advice for Weight Gain",
+              "slots": []
+            },
+            {
+              "text": "Diet and Fitness Advice for Maintain Weight",
+              "slots": []
+            },
+            {
+              "text": "Diet and Fitness Advice for Weight Loss",
+              "slots": []
+            },
+            {
+              "text": "I want a diet chart prepared for me",
+              "slots": []
+            },
+            {
+              "text": "Can you tell me what diet is perfect for me",
+              "slots": []
+            },
+            {
+              "text": "Generate Diet Analysis",
+              "slots": []
+            },
+            {
+              "text": "Generate Advice",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "1c477622",
+          "name": "DELAY_IN_PARCEL",
+          "inputs": [
+            {
+              "text": "Is there a delay in delivery becuase of the pandemic?",
+              "slots": []
+            },
+            {
+              "text": "How long is parcel delayed because of COVID?",
+              "slots": []
+            },
+            {
+              "text": "Why is my delivery late",
+              "slots": []
+            },
+            {
+              "text": "Why is my parcel delayed",
+              "slots": []
+            },
+            {
+              "text": "why is parcel taking so long",
+              "slots": []
+            },
+            {
+              "text": "My order is very late",
+              "slots": []
+            },
+            {
+              "text": "Delivery is showing very late",
+              "slots": []
+            },
+            {
+              "text": "My Order is Delayed",
+              "slots": []
+            },
+            {
+              "text": "Delay Order",
+              "slots": []
+            },
+            {
+              "text": "Why there is a delay",
+              "slots": []
+            },
+            {
+              "text": "Product delayed",
+              "slots": []
+            },
+            {
+              "text": "order delayed",
+              "slots": []
+            },
+            {
+              "text": "why my order is delayed",
+              "slots": []
+            },
+            {
+              "text": "Why my parcel is delay",
+              "slots": []
+            },
+            {
+              "text": "Why it's getting delayed",
+              "slots": []
+            },
+            {
+              "text": "I am not received my order yet",
+              "slots": []
+            },
+            {
+              "text": "Delay during Covid-19",
+              "slots": []
+            },
+            {
+              "text": "my order was delayed",
+              "slots": []
+            },
+            {
+              "text": "it's been delayed",
+              "slots": []
+            },
+            {
+              "text": "why my order keep getting delayed",
+              "slots": []
+            },
+            {
+              "text": "i have not received my order till today.",
+              "slots": []
+            },
+            {
+              "text": "I have still not received my order",
+              "slots": []
+            },
+            {
+              "text": "My order was supposed to arrive long ago. Can you please tell me when will it come?",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "fe8e8929",
+          "name": "EXPIRY_DATE",
+          "inputs": [
+            {
+              "text": "What if I receive expired product",
+              "slots": []
+            },
+            {
+              "text": "I have received an Expired product",
+              "slots": []
+            },
+            {
+              "text": "Expiry Date",
+              "slots": []
+            },
+            {
+              "text": "Product Expiry",
+              "slots": []
+            },
+            {
+              "text": "Where can we find expiry information regarding product",
+              "slots": []
+            },
+            {
+              "text": "Where can i check the expiry information of the product?",
+              "slots": []
+            },
+            {
+              "text": "How do i find out the expiry date of a product",
+              "slots": []
+            },
+            {
+              "text": "How to find the expiry date of a product",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "85a22c25",
+          "name": "FRANCHISE",
+          "inputs": [
+            {
+              "text": "Get Franchise",
+              "slots": []
+            },
+            {
+              "text": "would like to associated as seller",
+              "slots": []
+            },
+            {
+              "text": "i want to enroll my self as a seller",
+              "slots": []
+            },
+            {
+              "text": "I would like to get dealership",
+              "slots": []
+            },
+            {
+              "text": "i want to become the seller partner",
+              "slots": []
+            },
+            {
+              "text": "I wanted to be a seller",
+              "slots": []
+            },
+            {
+              "text": "Become a seller",
+              "slots": []
+            },
+            {
+              "text": "SELLER",
+              "slots": []
+            },
+            {
+              "text": "I want to became a seller",
+              "slots": []
+            },
+            {
+              "text": "How do i become a seller on curekart?",
+              "slots": []
+            },
+            {
+              "text": "i want to become a seller",
+              "slots": []
+            },
+            {
+              "text": "can i become a seller",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "5e24d452",
+          "name": "ORDER_STATUS",
+          "inputs": [
+            {
+              "text": "Track my order",
+              "slots": []
+            },
+            {
+              "text": "What is my shipment status",
+              "slots": []
+            },
+            {
+              "text": "What is the progress of my orders",
+              "slots": []
+            },
+            {
+              "text": "Can you tell me about my previous orders",
+              "slots": []
+            },
+            {
+              "text": "What is my current order status",
+              "slots": []
+            },
+            {
+              "text": "Can you tell me my current order status",
+              "slots": []
+            },
+            {
+              "text": "What is my order shipment progress?",
+              "slots": []
+            },
+            {
+              "text": "Where do you live",
+              "slots": []
+            },
+            {
+              "text": "The delivery date  says 5 more days, are there any hopes i will receive my order before that",
+              "slots": []
+            },
+            {
+              "text": "I want to track my order, when will it arrive?",
+              "slots": []
+            },
+            {
+              "text": "I have been eager to receive my order how long it will take to deliver?",
+              "slots": []
+            },
+            {
+              "text": "how will I come to know where my order has reached so far because it is so difficult to track the delivery agent",
+              "slots": []
+            },
+            {
+              "text": "My order status has not been updated on the website please tell where it is",
+              "slots": []
+            },
+            {
+              "text": "hi can you track my order",
+              "slots": []
+            },
+            {
+              "text": "Could you please help me tracking my order",
+              "slots": []
+            },
+            {
+              "text": "Where is my order?",
+              "slots": []
+            },
+            {
+              "text": "Where can I see order status? Whether it's shipped or not yet?",
+              "slots": []
+            },
+            {
+              "text": "please provide the status",
+              "slots": []
+            },
+            {
+              "text": "Status of my order",
+              "slots": []
+            },
+            {
+              "text": "I need my order status",
+              "slots": []
+            },
+            {
+              "text": "tracking details",
+              "slots": []
+            },
+            {
+              "text": "get order status",
+              "slots": []
+            },
+            {
+              "text": "order tracking",
+              "slots": []
+            },
+            {
+              "text": "check the order status",
+              "slots": []
+            },
+            {
+              "text": "Whats my order status",
+              "slots": []
+            },
+            {
+              "text": "can i get the tracking id",
+              "slots": []
+            },
+            {
+              "text": "Whats the tracking number",
+              "slots": []
+            },
+            {
+              "text": "I want to track my order",
+              "slots": []
+            },
+            {
+              "text": "Track Order",
+              "slots": []
+            },
+            {
+              "text": "When will my order will be delivered",
+              "slots": []
+            },
+            {
+              "text": "when will i recieve my order?",
+              "slots": []
+            },
+            {
+              "text": "When can I expect my delivery because of the pandemic?",
+              "slots": []
+            },
+            {
+              "text": "Will I receive my order after covid19 lockdown?",
+              "slots": []
+            },
+            {
+              "text": "how will covid lockdown affect my order",
+              "slots": []
+            },
+            {
+              "text": "It has not been delivered yet. So I want to know when it will be delivered",
+              "slots": []
+            },
+            {
+              "text": "How much more time do I have to wait for my parcel",
+              "slots": []
+            },
+            {
+              "text": "Is it possible to get my order early",
+              "slots": []
+            },
+            {
+              "text": "when can i expect my delivery",
+              "slots": []
+            },
+            {
+              "text": "In how many days I will get delivery",
+              "slots": []
+            },
+            {
+              "text": "my order has not reached",
+              "slots": []
+            },
+            {
+              "text": "when will my order be delivered?",
+              "slots": []
+            },
+            {
+              "text": "when will i receive this product?",
+              "slots": []
+            },
+            {
+              "text": "can my order be delivered early",
+              "slots": []
+            },
+            {
+              "text": "when i will get the product?",
+              "slots": []
+            },
+            {
+              "text": "When will it arrive",
+              "slots": []
+            },
+            {
+              "text": "I had ordered before the covid breakout how much more time it will take to deliver?",
+              "slots": []
+            },
+            {
+              "text": "my order is not delivered yet",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "3c7bdd91",
+          "name": "INTERNATIONAL_SHIPPING",
+          "inputs": [
+            {
+              "text": "Delivery out of India",
+              "slots": []
+            },
+            {
+              "text": "International Shipping",
+              "slots": []
+            },
+            {
+              "text": "Out of India",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "6279d0f3",
+          "name": "MODES_OF_PAYMENTS",
+          "inputs": [
+            {
+              "text": "Modes of payments",
+              "slots": []
+            },
+            {
+              "text": "ways of paymets",
+              "slots": []
+            },
+            {
+              "text": "Accepted modes of payments",
+              "slots": []
+            },
+            {
+              "text": "What are the modes of payments you accept",
+              "slots": []
+            },
+            {
+              "text": "Tell me the modes of payment",
+              "slots": []
+            },
+            {
+              "text": "How can I pay Online",
+              "slots": []
+            },
+            {
+              "text": "i can't make a prepaid payment",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "98f0f329",
+          "name": "MODIFY_ADDRESS",
+          "inputs": [
+            {
+              "text": "Change delivery address?",
+              "slots": []
+            },
+            {
+              "text": "Delivery address is wrong it is to be changed",
+              "slots": []
+            },
+            {
+              "text": "I want to change my delivery address",
+              "slots": []
+            },
+            {
+              "text": "i have to change my address",
+              "slots": []
+            },
+            {
+              "text": "i wanna change shipping address",
+              "slots": []
+            },
+            {
+              "text": "Need to change shipping address",
+              "slots": []
+            },
+            {
+              "text": "Edit shipping address",
+              "slots": []
+            },
+            {
+              "text": "I want to change my shipping address",
+              "slots": []
+            },
+            {
+              "text": "I want change my addresses",
+              "slots": []
+            },
+            {
+              "text": "change of address",
+              "slots": []
+            },
+            {
+              "text": "Regarding change of address of my order.",
+              "slots": []
+            },
+            {
+              "text": "I need to change the address of my order",
+              "slots": []
+            },
+            {
+              "text": "can i change the addres on the order",
+              "slots": []
+            },
+            {
+              "text": "Can you please change the address?",
+              "slots": []
+            },
+            {
+              "text": "Modify Address",
+              "slots": []
+            },
+            {
+              "text": "Address Issue",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "d75c8d9e",
+          "name": "ORDER_QUERY",
+          "inputs": [
+            {
+              "text": "I have a query related to my order",
+              "slots": []
+            },
+            {
+              "text": "Help required on order",
+              "slots": []
+            },
+            {
+              "text": "details  needed for my order",
+              "slots": []
+            },
+            {
+              "text": "Query for my order",
+              "slots": []
+            },
+            {
+              "text": "I have an order related query",
+              "slots": []
+            },
+            {
+              "text": "I want to know information related to my orders",
+              "slots": []
+            },
+            {
+              "text": "Order query",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "8a261187",
+          "name": "ORDER_TAKING",
+          "inputs": [
+            {
+              "text": "Are you taking orders during COVID?",
+              "slots": []
+            },
+            {
+              "text": "i know its lockdown due to coronavirus but can i still place an order?",
+              "slots": []
+            },
+            {
+              "text": "I wanted to order some things, can I place an order on the website?",
+              "slots": []
+            },
+            {
+              "text": "are you taking up orders during the lockdown?",
+              "slots": []
+            },
+            {
+              "text": "please tell me if I can still place an order on the website during the lockdown",
+              "slots": []
+            },
+            {
+              "text": "are you accepting prepaid orders during lockdown",
+              "slots": []
+            },
+            {
+              "text": "Can i place prepaid order",
+              "slots": []
+            },
+            {
+              "text": "Accept Orders Again",
+              "slots": []
+            },
+            {
+              "text": "Hi I want to order",
+              "slots": []
+            },
+            {
+              "text": "Can i buy during quarantine",
+              "slots": []
+            },
+            {
+              "text": "Can I order it ? While lockdown as well.",
+              "slots": []
+            },
+            {
+              "text": "Are you taking orders for delivery",
+              "slots": []
+            },
+            {
+              "text": "Are you guys still accepting order?",
+              "slots": []
+            },
+            {
+              "text": "Hi, is your service operating during curfew",
+              "slots": []
+            },
+            {
+              "text": "Want COD option",
+              "slots": []
+            },
+            {
+              "text": "I want to order on products",
+              "slots": []
+            },
+            {
+              "text": "Can I order now ?",
+              "slots": []
+            },
+            {
+              "text": "Can i order online right now?",
+              "slots": []
+            },
+            {
+              "text": "can I pay cash later",
+              "slots": []
+            },
+            {
+              "text": "Is COD available",
+              "slots": []
+            },
+            {
+              "text": "is Cash on delivery possible",
+              "slots": []
+            },
+            {
+              "text": "Can I place Cash on delivery order",
+              "slots": []
+            },
+            {
+              "text": "Are you taking COD orders",
+              "slots": []
+            },
+            {
+              "text": "COD option is not available",
+              "slots": []
+            },
+            {
+              "text": "Cash on delivery option is not showing",
+              "slots": []
+            },
+            {
+              "text": "Why it is not showing COD option",
+              "slots": []
+            },
+            {
+              "text": "pay on delivery option on the portal",
+              "slots": []
+            },
+            {
+              "text": "COD is not available?",
+              "slots": []
+            },
+            {
+              "text": "I want to book shipment on cash on delivery",
+              "slots": []
+            },
+            {
+              "text": "There is no option for cash on delivery",
+              "slots": []
+            },
+            {
+              "text": "How come there is  no COD on curekart",
+              "slots": []
+            },
+            {
+              "text": "I want to pay COD",
+              "slots": []
+            },
+            {
+              "text": "COD",
+              "slots": []
+            },
+            {
+              "text": "Buy through Cash on delivery",
+              "slots": []
+            },
+            {
+              "text": "There's no option for Cash on Delivery",
+              "slots": []
+            },
+            {
+              "text": "Cash on Delivery",
+              "slots": []
+            },
+            {
+              "text": "Wants to buy a supplement through cash on delivery",
+              "slots": []
+            },
+            {
+              "text": "Are you still delivering during this time?",
+              "slots": []
+            },
+            {
+              "text": "Do i need to make payment in cash",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "d4ba0ca6",
+          "name": "ORIGINAL_PRODUCT",
+          "inputs": [
+            {
+              "text": "Original Products",
+              "slots": []
+            },
+            {
+              "text": "do you have authentic products",
+              "slots": []
+            },
+            {
+              "text": "Is your product original",
+              "slots": []
+            },
+            {
+              "text": "are your products genuine",
+              "slots": []
+            },
+            {
+              "text": "can i get original product",
+              "slots": []
+            },
+            {
+              "text": "Show me your authenticity",
+              "slots": []
+            },
+            {
+              "text": "Fake product",
+              "slots": []
+            },
+            {
+              "text": "Authentication",
+              "slots": []
+            },
+            {
+              "text": "Authenticate",
+              "slots": []
+            },
+            {
+              "text": "Authentic",
+              "slots": []
+            },
+            {
+              "text": "How I check product is original or fake",
+              "slots": []
+            },
+            {
+              "text": "How to check products is original or not",
+              "slots": []
+            },
+            {
+              "text": "how to verify its original or duplicate",
+              "slots": []
+            },
+            {
+              "text": "My supplement is original or not",
+              "slots": []
+            },
+            {
+              "text": "How to know if product is orignal",
+              "slots": []
+            },
+            {
+              "text": "Authenticated",
+              "slots": []
+            },
+            {
+              "text": "What if I find it fake after receiving",
+              "slots": []
+            },
+            {
+              "text": "Product seems fake",
+              "slots": []
+            },
+            {
+              "text": "Product is fake",
+              "slots": []
+            },
+            {
+              "text": "I got fake product",
+              "slots": []
+            },
+            {
+              "text": "I would like to know the originality of the product",
+              "slots": []
+            },
+            {
+              "text": "how can i check the authenticity of the product",
+              "slots": []
+            },
+            {
+              "text": "Are your products 100% original?",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "06b1a25b",
+          "name": "REFUNDS_RETURNS_REPLACEMENTS",
+          "inputs": [
+            {
+              "text": "I want to know my refund status",
+              "slots": []
+            },
+            {
+              "text": "I want to know about my replacements",
+              "slots": []
+            },
+            {
+              "text": "I havent received my refund it has been many days since the return",
+              "slots": []
+            },
+            {
+              "text": "I want my item replaced because the item I have received has tampered with already",
+              "slots": []
+            },
+            {
+              "text": "Order Replacement for the products i received because I did not order what I have received",
+              "slots": []
+            },
+            {
+              "text": "Where is my refund?",
+              "slots": []
+            },
+            {
+              "text": "Refund not received",
+              "slots": []
+            },
+            {
+              "text": "Check Refund Status",
+              "slots": []
+            },
+            {
+              "text": "query related to refunds",
+              "slots": []
+            },
+            {
+              "text": "query related to replacements",
+              "slots": []
+            },
+            {
+              "text": "I have sent my order for refund how much time will it take?",
+              "slots": []
+            },
+            {
+              "text": "How can I get a refund for the order I placed?",
+              "slots": []
+            },
+            {
+              "text": "I want my payment for refund back, when I will get it?",
+              "slots": []
+            },
+            {
+              "text": "The product I received was of bad quality, how do I replace it?",
+              "slots": []
+            },
+            {
+              "text": "I need to replace the product I recieved",
+              "slots": []
+            },
+            {
+              "text": "I would just like to return my product since you have delivered something completely different from what I had initially ordered",
+              "slots": []
+            },
+            {
+              "text": "I want my money back",
+              "slots": []
+            },
+            {
+              "text": "some of the items I have ordered are missing how do I get a replacement?",
+              "slots": []
+            },
+            {
+              "text": "I want refund as soon as in my account",
+              "slots": []
+            },
+            {
+              "text": "What's you refund policy",
+              "slots": []
+            },
+            {
+              "text": "please refund my amount",
+              "slots": []
+            },
+            {
+              "text": "Refund money",
+              "slots": []
+            },
+            {
+              "text": "Refund",
+              "slots": []
+            },
+            {
+              "text": "Return the product",
+              "slots": []
+            },
+            {
+              "text": "Any return poliCy",
+              "slots": []
+            },
+            {
+              "text": "order returned",
+              "slots": []
+            },
+            {
+              "text": "My replacement order",
+              "slots": []
+            },
+            {
+              "text": "My Refund",
+              "slots": []
+            },
+            {
+              "text": "i want to refund my product",
+              "slots": []
+            },
+            {
+              "text": "i want to replace my bad quality product",
+              "slots": []
+            },
+            {
+              "text": "as it is only showing return policy but nowhere option to return my order",
+              "slots": []
+            },
+            {
+              "text": "I would like to return a part of my latest order",
+              "slots": []
+            },
+            {
+              "text": "It\u2019s shows that u returned multiple order",
+              "slots": []
+            },
+            {
+              "text": "I need to initiate return",
+              "slots": []
+            },
+            {
+              "text": "Replacement",
+              "slots": []
+            },
+            {
+              "text": "I want replace my order",
+              "slots": []
+            },
+            {
+              "text": "Replacement order",
+              "slots": []
+            },
+            {
+              "text": "i want replacement",
+              "slots": []
+            },
+            {
+              "text": "Not received my replacement order",
+              "slots": []
+            },
+            {
+              "text": "Return product",
+              "slots": []
+            },
+            {
+              "text": "Return Policy",
+              "slots": []
+            },
+            {
+              "text": "Return",
+              "slots": []
+            },
+            {
+              "text": "When will my parcel return?",
+              "slots": []
+            },
+            {
+              "text": "Information for return",
+              "slots": []
+            },
+            {
+              "text": "i want to return one product",
+              "slots": []
+            },
+            {
+              "text": "I ordered by mistake",
+              "slots": []
+            },
+            {
+              "text": "refund wrong item received",
+              "slots": []
+            },
+            {
+              "text": "Wrong  items shipped",
+              "slots": []
+            },
+            {
+              "text": "ordered wrong item",
+              "slots": []
+            },
+            {
+              "text": "I want to return my last order",
+              "slots": []
+            },
+            {
+              "text": "I want exchange the product",
+              "slots": []
+            },
+            {
+              "text": "i want to return my order",
+              "slots": []
+            },
+            {
+              "text": "I want to know about my refund or replacement",
+              "slots": []
+            },
+            {
+              "text": "Refund & Replacement",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "1f3cd3d1",
+          "name": "PAYMENT_AND_BILL",
+          "inputs": [
+            {
+              "text": "I want to know about my payments",
+              "slots": []
+            },
+            {
+              "text": "Payments and Bills",
+              "slots": []
+            },
+            {
+              "text": "I have Payment & Bill Related Queries",
+              "slots": []
+            },
+            {
+              "text": "I want my invoice for my previous orders",
+              "slots": []
+            },
+            {
+              "text": "My money got deducted but my order did not get placed, can you help me?",
+              "slots": []
+            },
+            {
+              "text": "I have an issue with my bill, can I get a duplicate copy?",
+              "slots": []
+            },
+            {
+              "text": "my account got debited but my order did not get placed please give me a solution",
+              "slots": []
+            },
+            {
+              "text": "I see a transaction on my bank app, the money for the order has been deducted but there is no order visible on my profile",
+              "slots": []
+            },
+            {
+              "text": "I will require a duplicate bill for my previous orders since I have to show it as a proof",
+              "slots": []
+            },
+            {
+              "text": "My order did not get placed but my money got deducted form my account.",
+              "slots": []
+            },
+            {
+              "text": "Can you send me a duplicate bill for my order?",
+              "slots": []
+            },
+            {
+              "text": "I want a duplicate bill for my order, where can I find it?",
+              "slots": []
+            },
+            {
+              "text": "I have not received my bill, give me my bill",
+              "slots": []
+            },
+            {
+              "text": "my bill has been not publised yet on the website, i want a bill for my order",
+              "slots": []
+            },
+            {
+              "text": "you have not provided me my bill yet",
+              "slots": []
+            },
+            {
+              "text": "give me my duplicate bill",
+              "slots": []
+            },
+            {
+              "text": "show me my duplicate bill for my latest order",
+              "slots": []
+            },
+            {
+              "text": "Give me a copy of my bill please",
+              "slots": []
+            },
+            {
+              "text": "i want invoice",
+              "slots": []
+            },
+            {
+              "text": "I want invoice of my product",
+              "slots": []
+            },
+            {
+              "text": "Money deducted but order not placed",
+              "slots": []
+            },
+            {
+              "text": "my money has been deducted but it's not been place order",
+              "slots": []
+            },
+            {
+              "text": "i have placed a order recently,money deducted but order not placed",
+              "slots": []
+            },
+            {
+              "text": "My Money is deducted but the order is not placed",
+              "slots": []
+            },
+            {
+              "text": "I have query related to payments and bill",
+              "slots": []
+            },
+            {
+              "text": "Payments & bill",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "cdf8bef5",
+          "name": "PORTAL_ISSUE",
+          "inputs": [
+            {
+              "text": "Portal not working",
+              "slots": []
+            },
+            {
+              "text": "Option is not visible",
+              "slots": []
+            },
+            {
+              "text": "Unable to see product in my cart",
+              "slots": []
+            },
+            {
+              "text": "My Cart Is empty",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "ddb66463",
+          "name": "CHECK_PINCODE",
+          "inputs": [
+            {
+              "text": "Product Service",
+              "slots": []
+            },
+            {
+              "text": "pincode serviceable",
+              "slots": []
+            },
+            {
+              "text": "I wanted to know whether you are delivering in",
+              "slots": []
+            },
+            {
+              "text": "Are you shipping to my pincode",
+              "slots": []
+            },
+            {
+              "text": "Is it deliverable to my pin code",
+              "slots": []
+            },
+            {
+              "text": "Will you deliver to my pincode",
+              "slots": []
+            },
+            {
+              "text": "Are you delivering products at my pincode",
+              "slots": []
+            },
+            {
+              "text": "Can my product be delivered to my pincode",
+              "slots": []
+            },
+            {
+              "text": "Can you check my pincode delivery",
+              "slots": []
+            },
+            {
+              "text": "Can you check if my pincode is serviceable",
+              "slots": []
+            },
+            {
+              "text": "Is delivery available at my pincode",
+              "slots": []
+            },
+            {
+              "text": "How many days will take to deliver",
+              "slots": []
+            },
+            {
+              "text": "Do you deliver at my pincode",
+              "slots": []
+            },
+            {
+              "text": "Get Product Service",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "2cd19647",
+          "name": "RECOMMEND_PRODUCT",
+          "inputs": [
+            {
+              "text": "Recommend a product",
+              "slots": []
+            },
+            {
+              "text": "What are all the products you have?",
+              "slots": []
+            },
+            {
+              "text": "I am confused about what to buy since there are too many options I and I really don't know what I should focus on right now",
+              "slots": []
+            },
+            {
+              "text": "I'm here to browse some products because my friend said heathkart has some superb varieties",
+              "slots": []
+            },
+            {
+              "text": "give me all kinds of products you have",
+              "slots": []
+            },
+            {
+              "text": "give me some other products regarding building a good health and body",
+              "slots": []
+            },
+            {
+              "text": "Select another goal",
+              "slots": []
+            },
+            {
+              "text": "Can you help me with building an athletic body so that I participate in sports competition",
+              "slots": []
+            },
+            {
+              "text": "Which products can you help me?",
+              "slots": []
+            },
+            {
+              "text": "I am aiming to get a lean body, can you help me?",
+              "slots": []
+            },
+            {
+              "text": "I want help to reach my weight goal, can you suggest some products?",
+              "slots": []
+            },
+            {
+              "text": "what products would you suggest to lose weight?",
+              "slots": []
+            },
+            {
+              "text": "I am trying to cut down on my weight",
+              "slots": []
+            },
+            {
+              "text": "I need some hair care products since I have been experiencing a lot for problems lately",
+              "slots": []
+            },
+            {
+              "text": "I want to transform my lifestyle to be more healthy",
+              "slots": []
+            },
+            {
+              "text": "I have been trying to maintain a healthy lifestyle as a new year goal, which products whould you recommend to me",
+              "slots": []
+            },
+            {
+              "text": "Can you suggest me some products?",
+              "slots": []
+            },
+            {
+              "text": "I need some product suggestion depending on my health goal",
+              "slots": []
+            },
+            {
+              "text": "i'm beginner in gym",
+              "slots": []
+            },
+            {
+              "text": "Best mass gainer??",
+              "slots": []
+            },
+            {
+              "text": "I want get muscle mass and lean mass",
+              "slots": []
+            },
+            {
+              "text": "Lose weight and gain lean muscles",
+              "slots": []
+            },
+            {
+              "text": "i mean i want protein supplement",
+              "slots": []
+            },
+            {
+              "text": "i want to gain musclemass",
+              "slots": []
+            },
+            {
+              "text": "Sir I want to fast gain weight.",
+              "slots": []
+            },
+            {
+              "text": "which is the best one to use for body gainer",
+              "slots": []
+            },
+            {
+              "text": "Please suggest me what is the best medicine of immunity boosting",
+              "slots": []
+            },
+            {
+              "text": "I want a muscular body",
+              "slots": []
+            },
+            {
+              "text": "give products for protein",
+              "slots": []
+            },
+            {
+              "text": "What is the best pre workout protein to boost heavy duty workout",
+              "slots": []
+            },
+            {
+              "text": "Wanted to get Protein powder",
+              "slots": []
+            },
+            {
+              "text": "give me all the products required for bodybuilding",
+              "slots": []
+            },
+            {
+              "text": "Protein shakes for weight loss",
+              "slots": []
+            },
+            {
+              "text": "plz suggest me a best mass mass gainer...",
+              "slots": []
+            },
+            {
+              "text": "I want to lose 10 kg in 1 month",
+              "slots": []
+            },
+            {
+              "text": "I want to gain more muscles",
+              "slots": []
+            },
+            {
+              "text": "I want to buy best mass gainer but I am confused",
+              "slots": []
+            },
+            {
+              "text": "i want to a product for weight gain",
+              "slots": []
+            },
+            {
+              "text": "i need supplements",
+              "slots": []
+            },
+            {
+              "text": "i i want weight loss",
+              "slots": []
+            },
+            {
+              "text": "For biceps and tricep muscle growth supplements",
+              "slots": []
+            },
+            {
+              "text": "energy boost in body",
+              "slots": []
+            },
+            {
+              "text": "Can you please suggest me some products specified to help me gain weight",
+              "slots": []
+            },
+            {
+              "text": "Best whey protein",
+              "slots": []
+            },
+            {
+              "text": "Best whey for lean body",
+              "slots": []
+            },
+            {
+              "text": "best supplement for biceps and triceps growth",
+              "slots": []
+            },
+            {
+              "text": "Best protein for lein body",
+              "slots": []
+            },
+            {
+              "text": "Best pre workout supplement",
+              "slots": []
+            },
+            {
+              "text": "Best multivitamins for bulking",
+              "slots": []
+            },
+            {
+              "text": "I want to purchase",
+              "slots": []
+            },
+            {
+              "text": "Height increasing nutrition",
+              "slots": []
+            },
+            {
+              "text": "I want to gain my weight",
+              "slots": []
+            },
+            {
+              "text": "I want to reduce my fat",
+              "slots": []
+            },
+            {
+              "text": "Need to buy",
+              "slots": []
+            },
+            {
+              "text": "I want new product",
+              "slots": []
+            },
+            {
+              "text": "Weight gainer",
+              "slots": []
+            },
+            {
+              "text": "I want home gym product",
+              "slots": []
+            },
+            {
+              "text": "I want to grow my height",
+              "slots": []
+            },
+            {
+              "text": "I need dumbbells",
+              "slots": []
+            },
+            {
+              "text": "I want dumbells set",
+              "slots": []
+            },
+            {
+              "text": "Skin brightness",
+              "slots": []
+            },
+            {
+              "text": "Body fat loss",
+              "slots": []
+            },
+            {
+              "text": "Multivitamin",
+              "slots": []
+            },
+            {
+              "text": "Hairfall",
+              "slots": []
+            },
+            {
+              "text": "Calcium",
+              "slots": []
+            },
+            {
+              "text": "Fish oil",
+              "slots": []
+            },
+            {
+              "text": "Fat Loss",
+              "slots": []
+            },
+            {
+              "text": "Fat burner",
+              "slots": []
+            },
+            {
+              "text": "Dumbbell",
+              "slots": []
+            },
+            {
+              "text": "Creatine",
+              "slots": []
+            },
+            {
+              "text": "Bulk gainer",
+              "slots": []
+            },
+            {
+              "text": "brain memory",
+              "slots": []
+            },
+            {
+              "text": "body detox",
+              "slots": []
+            },
+            {
+              "text": "Biotin",
+              "slots": []
+            },
+            {
+              "text": "Glutathione",
+              "slots": []
+            },
+            {
+              "text": "Gainer",
+              "slots": []
+            },
+            {
+              "text": "Gym Equipment",
+              "slots": []
+            },
+            {
+              "text": "isopure",
+              "slots": []
+            },
+            {
+              "text": "Height",
+              "slots": []
+            },
+            {
+              "text": "Hair Fall",
+              "slots": []
+            },
+            {
+              "text": "L arginine",
+              "slots": []
+            },
+            {
+              "text": "Multi vitamin",
+              "slots": []
+            },
+            {
+              "text": "Omega 3",
+              "slots": []
+            },
+            {
+              "text": "Resistance band",
+              "slots": []
+            },
+            {
+              "text": "Slim tea",
+              "slots": []
+            },
+            {
+              "text": "Testosterone",
+              "slots": []
+            },
+            {
+              "text": "True Basic",
+              "slots": []
+            },
+            {
+              "text": "Vitamin",
+              "slots": []
+            },
+            {
+              "text": "I want to get the product",
+              "slots": []
+            },
+            {
+              "text": "I want to buy",
+              "slots": []
+            },
+            {
+              "text": "I wanna Buy",
+              "slots": []
+            },
+            {
+              "text": "MB Gold Protein",
+              "slots": []
+            },
+            {
+              "text": "Syntha 6",
+              "slots": []
+            },
+            {
+              "text": "BCAA",
+              "slots": []
+            },
+            {
+              "text": "MB Supergainer",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "b7cf528f",
+          "name": "REFER_EARN",
+          "inputs": [
+            {
+              "text": "Reedem referral",
+              "slots": []
+            },
+            {
+              "text": "My friend refer me to CureKart",
+              "slots": []
+            },
+            {
+              "text": "Refer Amount",
+              "slots": []
+            },
+            {
+              "text": "Friend referral",
+              "slots": []
+            },
+            {
+              "text": "Refer & Earn",
+              "slots": []
+            },
+            {
+              "text": "Want to know about refer & Earn",
+              "slots": []
+            },
+            {
+              "text": "Refral code",
+              "slots": []
+            },
+            {
+              "text": "My Referral code",
+              "slots": []
+            },
+            {
+              "text": "Need help with refferal",
+              "slots": []
+            },
+            {
+              "text": "Referral",
+              "slots": []
+            },
+            {
+              "text": "I have referral promo code",
+              "slots": []
+            },
+            {
+              "text": "How to refer my referal code",
+              "slots": []
+            },
+            {
+              "text": "How cani refer a friend for this app?",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "b0d84507",
+          "name": "RESUME_DELIVERY",
+          "inputs": [
+            {
+              "text": "When will you resume delivery due to COVID?",
+              "slots": []
+            },
+            {
+              "text": "are you going to start delivery during this lockdown period as well?",
+              "slots": []
+            },
+            {
+              "text": "other websites like lagoon are delivering when will curekart start again to deliver?",
+              "slots": []
+            },
+            {
+              "text": "I have not received my parcel yet, when will to start the delivery again",
+              "slots": []
+            },
+            {
+              "text": "I am not getting any update on my parcel because of corona",
+              "slots": []
+            },
+            {
+              "text": "Resume to Deliver",
+              "slots": []
+            },
+            {
+              "text": "If I order now do I get delivery",
+              "slots": []
+            },
+            {
+              "text": "Can you deliver it to my address",
+              "slots": []
+            },
+            {
+              "text": "Hi are you delivering now",
+              "slots": []
+            },
+            {
+              "text": "Since there is a lockdown and only essestial services are working will cureKart deliver me the items",
+              "slots": []
+            },
+            {
+              "text": "as there is a lockdown everywhere, is CureKart still working?",
+              "slots": []
+            },
+            {
+              "text": "how is CureKart handling covid orders",
+              "slots": []
+            },
+            {
+              "text": "I am not sure if covid is affecting your delivery",
+              "slots": []
+            },
+            {
+              "text": "how is covid impacting your delivery",
+              "slots": []
+            },
+            {
+              "text": "Impact on Delivery",
+              "slots": []
+            },
+            {
+              "text": "When can I get my product if I order today",
+              "slots": []
+            },
+            {
+              "text": "When I'll be receiving the product?",
+              "slots": []
+            },
+            {
+              "text": "Are you delivering in lock down?",
+              "slots": []
+            },
+            {
+              "text": "If I order today when I will get it",
+              "slots": []
+            },
+            {
+              "text": "If I order today, when will I get the delivery?",
+              "slots": []
+            },
+            {
+              "text": "Hello are you currently delivering?",
+              "slots": []
+            },
+            {
+              "text": "Hi do you deliver in this situation?",
+              "slots": []
+            },
+            {
+              "text": "If i place my order today, when will it be delivered?",
+              "slots": []
+            },
+            {
+              "text": "I want to order but are you delivering",
+              "slots": []
+            },
+            {
+              "text": "If i order today in how many days it will be delivered",
+              "slots": []
+            },
+            {
+              "text": "Is deliveries happening now?",
+              "slots": []
+            },
+            {
+              "text": "If i i order today .how much time it will be delivered?",
+              "slots": []
+            },
+            {
+              "text": "Can u deliver product during shut down?",
+              "slots": []
+            },
+            {
+              "text": "If I will order one product today them when it will be reach",
+              "slots": []
+            },
+            {
+              "text": "can you let me know exact delivery time",
+              "slots": []
+            },
+            {
+              "text": "i need information related to delivery times",
+              "slots": []
+            },
+            {
+              "text": "Delivery time duration",
+              "slots": []
+            },
+            {
+              "text": "what will be the delivery date",
+              "slots": []
+            },
+            {
+              "text": "I want to know when i will get my order if i place my order today",
+              "slots": []
+            },
+            {
+              "text": "Are you people delivering products?",
+              "slots": []
+            },
+            {
+              "text": "If I place order today how soon can I get order delivered?",
+              "slots": []
+            },
+            {
+              "text": "After prepaid when will it arrive?",
+              "slots": []
+            },
+            {
+              "text": "You can deliver order now in curfew",
+              "slots": []
+            },
+            {
+              "text": "Wts delivery time if i order today",
+              "slots": []
+            },
+            {
+              "text": "is Cure Kart providing delivery during lockdown?",
+              "slots": []
+            },
+            {
+              "text": "Is delivery available",
+              "slots": []
+            },
+            {
+              "text": "Is delivery affected by covid 19",
+              "slots": []
+            },
+            {
+              "text": "If I order right now how long will it take to deliver",
+              "slots": []
+            },
+            {
+              "text": "I want to order whey protein...can you please tell me expacted time of delivery",
+              "slots": []
+            },
+            {
+              "text": "how to long will it take for delivery of producs",
+              "slots": []
+            },
+            {
+              "text": "How much time for prepaid parcels",
+              "slots": []
+            },
+            {
+              "text": "Delivery period and date is not mentioned",
+              "slots": []
+            },
+            {
+              "text": "Delivery is available but it will take 15-18 days u mean to say",
+              "slots": []
+            },
+            {
+              "text": "Can I get the product these days if I prepay you",
+              "slots": []
+            },
+            {
+              "text": "Are you guys delivering the products if i order?",
+              "slots": []
+            },
+            {
+              "text": "are u providing delivery",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "8f608f04",
+          "name": "SIDE_EFFECT",
+          "inputs": [
+            {
+              "text": "It has any side effects or not",
+              "slots": []
+            },
+            {
+              "text": "Does it have side effects?",
+              "slots": []
+            },
+            {
+              "text": "is there any side effects",
+              "slots": []
+            },
+            {
+              "text": "Side Effect",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "63f44f28",
+          "name": "SIGN_UP",
+          "inputs": [
+            {
+              "text": "New to CureKart?",
+              "slots": []
+            },
+            {
+              "text": "Where can I sign up",
+              "slots": []
+            },
+            {
+              "text": "I am a new user",
+              "slots": []
+            },
+            {
+              "text": "I am new to curekart",
+              "slots": []
+            },
+            {
+              "text": "I am not a registered user of curekart",
+              "slots": []
+            },
+            {
+              "text": "I don't have the registered phone number",
+              "slots": []
+            },
+            {
+              "text": "Not a registered user",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "f2b077c3",
+          "name": "START_OVER",
+          "inputs": [
+            {
+              "text": "Show me the main menu",
+              "slots": []
+            },
+            {
+              "text": "Start again",
+              "slots": []
+            },
+            {
+              "text": "Start over",
+              "slots": []
+            },
+            {
+              "text": "Restart the flow",
+              "slots": []
+            },
+            {
+              "text": "Start over the flow",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "a8546562",
+          "name": "STORE_INFORMATION",
+          "inputs": [
+            {
+              "text": "Can I visit your store",
+              "slots": []
+            },
+            {
+              "text": "\u00c0re your shops operational",
+              "slots": []
+            },
+            {
+              "text": "Are stores still opening?",
+              "slots": []
+            },
+            {
+              "text": "Are your stores open",
+              "slots": []
+            },
+            {
+              "text": "Can i go to your shop",
+              "slots": []
+            },
+            {
+              "text": "Is your store open",
+              "slots": []
+            },
+            {
+              "text": "CureKart stores are open?",
+              "slots": []
+            },
+            {
+              "text": "Can I purchase from shop",
+              "slots": []
+            },
+            {
+              "text": "Can I purchase directly from store",
+              "slots": []
+            },
+            {
+              "text": "Can i collect it from a store",
+              "slots": []
+            },
+            {
+              "text": "Are curekart store open",
+              "slots": []
+            },
+            {
+              "text": "Stores near me",
+              "slots": []
+            },
+            {
+              "text": "Store information",
+              "slots": []
+            },
+            {
+              "text": "Are your offline stores open?",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "082b49eb",
+          "name": "USER_GOAL_FORM",
+          "inputs": [
+            {
+              "text": "Re-assess my profile",
+              "slots": []
+            },
+            {
+              "text": "I would want to take re-assessment",
+              "slots": []
+            },
+            {
+              "text": "Fill my goal",
+              "slots": []
+            },
+            {
+              "text": "Show me the form to add goal details",
+              "slots": []
+            },
+            {
+              "text": "How can I add my goals",
+              "slots": []
+            },
+            {
+              "text": "I want to add my goals",
+              "slots": []
+            },
+            {
+              "text": "Take reassessment",
+              "slots": []
+            },
+            {
+              "text": "Re-assessment",
+              "slots": []
+            },
+            {
+              "text": "Take Re-assessment",
+              "slots": []
+            },
+            {
+              "text": "Fill my body measures & Goal",
+              "slots": []
+            },
+            {
+              "text": "I want to take Re-assessment",
+              "slots": []
+            },
+            {
+              "text": "Let's do Re-assessment",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "fc8abade",
+          "name": "WORK_FROM_HOME",
+          "inputs": [
+            {
+              "text": "Is your head office working during lockdown?",
+              "slots": []
+            },
+            {
+              "text": "is curekart office open during the lockdown?",
+              "slots": []
+            },
+            {
+              "text": "I wanted to talk to contact your head office for some work but is it open?",
+              "slots": []
+            },
+            {
+              "text": "I hope you are also working from home during this time",
+              "slots": []
+            },
+            {
+              "text": "are you as well working from home like I am?",
+              "slots": []
+            },
+            {
+              "text": "is your banglore office working right now?",
+              "slots": []
+            },
+            {
+              "text": "how are you functioning",
+              "slots": []
+            },
+            {
+              "text": "does the government lockdown affect curekart?",
+              "slots": []
+            },
+            {
+              "text": "Office Information",
+              "slots": []
+            },
+            {
+              "text": "are you working during covid",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "01e7e646",
+          "name": "IMMUNITY",
+          "inputs": [
+            {
+              "text": "How can I increase my immunity",
+              "slots": []
+            },
+            {
+              "text": "I want to increase my immunity power",
+              "slots": []
+            },
+            {
+              "text": "Increase immunity power",
+              "slots": []
+            },
+            {
+              "text": "Increase Immunity",
+              "slots": []
+            },
+            {
+              "text": "Help me in increasing immunity",
+              "slots": []
+            },
+            {
+              "text": "Double Up Immunity Power",
+              "slots": []
+            }
+          ],
+          "slots": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {},
+      "platform": "voiceflow"
+    },
+    "_version": 4.03,
+    "name": "Initial Version",
+    "projectID": "64c97fde7a8e300007152e2d",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "64c97fde09d04078840fe435",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [],
+    "rootDiagramID": "64c97fde09d04078840fe435",
+    "creatorID": 70616,
+    "domains": [
+      {
+        "id": "clksubiff0ldi06ls5yb615b9",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64c97fde09d04078840fe435"
+        ],
+        "rootDiagramID": "64c97fde09d04078840fe435",
+        "updatedAt": "2023-08-01T21:58:55.103Z",
+        "updatedBy": 70616
+      }
+    ],
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Two_Intents_Structure_demo",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "64c97fde09d04078840fe435",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {},
+        "extraSlots": [],
+        "extraIntents": [],
+        "usedIntentsSet": [
+          "qe22w3koo",
+          "ez1zx3krn"
+        ],
+        "platform": "voiceflow",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": []
+      },
+      "settings": {},
+      "platform": "voiceflow"
+    }
+  },
+  "diagrams": {
+    "64c97fde09d04078840fe435": {
+      "_id": "64c97fde09d04078840fe435",
+      "offsetX": 302.9908936551516,
+      "offsetY": 137.4448574044576,
+      "zoom": 100,
+      "variables": [],
+      "name": "ROOT",
+      "versionID": "64c97fde09d04078840fe434",
+      "creatorID": 70616,
+      "modified": 1690927070,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            321.26138293106055,
+            78.19392824442801
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          385.89810859038664,
+                          100.19395159299899
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          445.5999390674715,
+                          100.19395159299899
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          445.5999390674715,
+                          54.938514940613715
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          505.3017695445564,
+                          54.938514940613715
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        },
+        "78a936ef47904ca5bd97d8ea": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "dc708374",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "78a936ef47904ca5bd97d8ed"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "78a936ef47904ca5bd97d8ea"
+        },
+        "78a936ef47904ca5bd97d8ee": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "78a936ef47904ca5bd97d8ee"
+            ]
+          },
+          "nodeID": "78a936ef47904ca5bd97d8ee",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "1f0fc35406574944a77c55da": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "b754ef2f",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "1f0fc35406574944a77c55dd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "1f0fc35406574944a77c55da"
+        },
+        "1f0fc35406574944a77c55de": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "1f0fc35406574944a77c55d4"
+            ]
+          },
+          "nodeID": "1f0fc35406574944a77c55de",
+          "coords": [
+            450,
+            0
+          ]
+        },
+        "d3465bc2e9f84fd49848da3a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "5fe97656",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "d3465bc2e9f84fd49848da3d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "d3465bc2e9f84fd49848da3a"
+        },
+        "d3465bc2e9f84fd49848da3e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "d3465bc2e9f84fd49848da3a"
+            ]
+          },
+          "nodeID": "d3465bc2e9f84fd49848da3e",
+          "coords": [
+            900,
+            0
+          ]
+        },
+        "fc36929190f14689aa4a479a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "70b40c06",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "fc36929190f14689aa4a479d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "fc36929190f14689aa4a479a"
+        },
+        "fc36929190f14689aa4a479e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "fc36929190f14689aa4a4793"
+            ]
+          },
+          "nodeID": "fc36929190f14689aa4a479e",
+          "coords": [
+            1350,
+            0
+          ]
+        },
+        "b19300e542b84ccfab6528fa": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "1c477622",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "b19300e542b84ccfab6528fd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "b19300e542b84ccfab6528fa"
+        },
+        "b19300e542b84ccfab6528fe": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "b19300e542b84ccfab6528fe"
+            ]
+          },
+          "nodeID": "b19300e542b84ccfab6528fe",
+          "coords": [
+            1800,
+            0
+          ]
+        },
+        "8cab69b10aa34aa1b714fbda": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "fe8e8929",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "8cab69b10aa34aa1b714fbdd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "8cab69b10aa34aa1b714fbda"
+        },
+        "8cab69b10aa34aa1b714fbde": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "8cab69b10aa34aa1b714fbdb"
+            ]
+          },
+          "nodeID": "8cab69b10aa34aa1b714fbde",
+          "coords": [
+            2250,
+            0
+          ]
+        },
+        "58a7f5e634e641c5a10f78ba": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "85a22c25",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "58a7f5e634e641c5a10f78bd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "58a7f5e634e641c5a10f78ba"
+        },
+        "58a7f5e634e641c5a10f78be": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "58a7f5e634e641c5a10f78b7"
+            ]
+          },
+          "nodeID": "58a7f5e634e641c5a10f78be",
+          "coords": [
+            2700,
+            0
+          ]
+        },
+        "dd21ade6a0234719bbb8415a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "5e24d452",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "dd21ade6a0234719bbb8415d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "dd21ade6a0234719bbb8415a"
+        },
+        "dd21ade6a0234719bbb8415e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "dd21ade6a0234719bbb8415c"
+            ]
+          },
+          "nodeID": "dd21ade6a0234719bbb8415e",
+          "coords": [
+            3150,
+            0
+          ]
+        },
+        "8f863fee84ce4e9f97cc79fa": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "3c7bdd91",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "8f863fee84ce4e9f97cc79fd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "8f863fee84ce4e9f97cc79fa"
+        },
+        "8f863fee84ce4e9f97cc79fe": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "8f863fee84ce4e9f97cc79f5"
+            ]
+          },
+          "nodeID": "8f863fee84ce4e9f97cc79fe",
+          "coords": [
+            3600,
+            0
+          ]
+        },
+        "f1c1d85cd29f46b68bac907a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "6279d0f3",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "f1c1d85cd29f46b68bac907d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "f1c1d85cd29f46b68bac907a"
+        },
+        "f1c1d85cd29f46b68bac907e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "f1c1d85cd29f46b68bac9076"
+            ]
+          },
+          "nodeID": "f1c1d85cd29f46b68bac907e",
+          "coords": [
+            4050,
+            0
+          ]
+        },
+        "239dd07c77cb4e258096f07a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "98f0f329",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "239dd07c77cb4e258096f07d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "239dd07c77cb4e258096f07a"
+        },
+        "239dd07c77cb4e258096f07e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "239dd07c77cb4e258096f076"
+            ]
+          },
+          "nodeID": "239dd07c77cb4e258096f07e",
+          "coords": [
+            0,
+            400
+          ]
+        },
+        "03cebcc14da74235b602669a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "d75c8d9e",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "03cebcc14da74235b602669d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "03cebcc14da74235b602669a"
+        },
+        "03cebcc14da74235b602669e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "03cebcc14da74235b602669d"
+            ]
+          },
+          "nodeID": "03cebcc14da74235b602669e",
+          "coords": [
+            450,
+            400
+          ]
+        },
+        "74e73b81dcc34939ae78f71a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "8a261187",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "74e73b81dcc34939ae78f71d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "74e73b81dcc34939ae78f71a"
+        },
+        "74e73b81dcc34939ae78f71e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "74e73b81dcc34939ae78f714"
+            ]
+          },
+          "nodeID": "74e73b81dcc34939ae78f71e",
+          "coords": [
+            900,
+            400
+          ]
+        },
+        "025001489ccd4489958dc09a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "d4ba0ca6",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "025001489ccd4489958dc09d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "025001489ccd4489958dc09a"
+        },
+        "025001489ccd4489958dc09e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "025001489ccd4489958dc090"
+            ]
+          },
+          "nodeID": "025001489ccd4489958dc09e",
+          "coords": [
+            1350,
+            400
+          ]
+        },
+        "ed844f07fa0c466dae6a266a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "06b1a25b",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "ed844f07fa0c466dae6a266d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "ed844f07fa0c466dae6a266a"
+        },
+        "ed844f07fa0c466dae6a266e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "ed844f07fa0c466dae6a2662"
+            ]
+          },
+          "nodeID": "ed844f07fa0c466dae6a266e",
+          "coords": [
+            1800,
+            400
+          ]
+        },
+        "8a0c4d3e431d455b8c7b0d3a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "1f3cd3d1",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "8a0c4d3e431d455b8c7b0d3d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "8a0c4d3e431d455b8c7b0d3a"
+        },
+        "8a0c4d3e431d455b8c7b0d3e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "8a0c4d3e431d455b8c7b0d34"
+            ]
+          },
+          "nodeID": "8a0c4d3e431d455b8c7b0d3e",
+          "coords": [
+            2250,
+            400
+          ]
+        },
+        "a292a93f303d4c7695da988a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "cdf8bef5",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "a292a93f303d4c7695da988d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "a292a93f303d4c7695da988a"
+        },
+        "a292a93f303d4c7695da988e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "a292a93f303d4c7695da988a"
+            ]
+          },
+          "nodeID": "a292a93f303d4c7695da988e",
+          "coords": [
+            2700,
+            400
+          ]
+        },
+        "9884ab30c53e4dda9d799f8a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "ddb66463",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "9884ab30c53e4dda9d799f8d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "9884ab30c53e4dda9d799f8a"
+        },
+        "9884ab30c53e4dda9d799f8e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "9884ab30c53e4dda9d799f8c"
+            ]
+          },
+          "nodeID": "9884ab30c53e4dda9d799f8e",
+          "coords": [
+            3150,
+            400
+          ]
+        },
+        "68e7fde71aa449b1b7d2998a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "2cd19647",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68e7fde71aa449b1b7d2998d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "68e7fde71aa449b1b7d2998a"
+        },
+        "68e7fde71aa449b1b7d2998e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "68e7fde71aa449b1b7d2998f"
+            ]
+          },
+          "nodeID": "68e7fde71aa449b1b7d2998e",
+          "coords": [
+            3600,
+            400
+          ]
+        },
+        "1826349c049644faae4ede2a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "b7cf528f",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "1826349c049644faae4ede2d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "1826349c049644faae4ede2a"
+        },
+        "1826349c049644faae4ede2e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "1826349c049644faae4ede22"
+            ]
+          },
+          "nodeID": "1826349c049644faae4ede2e",
+          "coords": [
+            4050,
+            400
+          ]
+        },
+        "7a50d55b42e8476e821ac3da": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "b0d84507",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "7a50d55b42e8476e821ac3dd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "7a50d55b42e8476e821ac3da"
+        },
+        "7a50d55b42e8476e821ac3de": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "7a50d55b42e8476e821ac3d4"
+            ]
+          },
+          "nodeID": "7a50d55b42e8476e821ac3de",
+          "coords": [
+            0,
+            800
+          ]
+        },
+        "4047dd2c10344c5a9c49046a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "8f608f04",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "4047dd2c10344c5a9c49046d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "4047dd2c10344c5a9c49046a"
+        },
+        "4047dd2c10344c5a9c49046e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "4047dd2c10344c5a9c490465"
+            ]
+          },
+          "nodeID": "4047dd2c10344c5a9c49046e",
+          "coords": [
+            450,
+            800
+          ]
+        },
+        "21efe53aa8994b148a2105ea": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "63f44f28",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "21efe53aa8994b148a2105ed"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "21efe53aa8994b148a2105ea"
+        },
+        "21efe53aa8994b148a2105ee": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "21efe53aa8994b148a2105ee"
+            ]
+          },
+          "nodeID": "21efe53aa8994b148a2105ee",
+          "coords": [
+            900,
+            800
+          ]
+        },
+        "f34150ceb2bd49cf9d33456a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "f2b077c3",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "f34150ceb2bd49cf9d33456d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "f34150ceb2bd49cf9d33456a"
+        },
+        "f34150ceb2bd49cf9d33456e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "f34150ceb2bd49cf9d334560"
+            ]
+          },
+          "nodeID": "f34150ceb2bd49cf9d33456e",
+          "coords": [
+            1350,
+            800
+          ]
+        },
+        "c187ce76092e406a927b591a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "a8546562",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "c187ce76092e406a927b591d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "c187ce76092e406a927b591a"
+        },
+        "c187ce76092e406a927b591e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "c187ce76092e406a927b5914"
+            ]
+          },
+          "nodeID": "c187ce76092e406a927b591e",
+          "coords": [
+            1800,
+            800
+          ]
+        },
+        "7d6b0f2bf14d45ffa9b1fe2a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "082b49eb",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "7d6b0f2bf14d45ffa9b1fe2d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "7d6b0f2bf14d45ffa9b1fe2a"
+        },
+        "7d6b0f2bf14d45ffa9b1fe2e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "7d6b0f2bf14d45ffa9b1fe2a"
+            ]
+          },
+          "nodeID": "7d6b0f2bf14d45ffa9b1fe2e",
+          "coords": [
+            2250,
+            800
+          ]
+        },
+        "0362122c69b8412b89d734aa": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "fc8abade",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "0362122c69b8412b89d734ad"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "0362122c69b8412b89d734aa"
+        },
+        "0362122c69b8412b89d734ae": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "0362122c69b8412b89d734a9"
+            ]
+          },
+          "nodeID": "0362122c69b8412b89d734ae",
+          "coords": [
+            2700,
+            800
+          ]
+        },
+        "a81d8d6f3f3849c68f20c41a": {
+          "type": "intent",
+          "data": {
+            "name": "",
+            "intent": "01e7e646",
+            "mappings": [],
+            "availability": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "a81d8d6f3f3849c68f20c41d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "a81d8d6f3f3849c68f20c41a"
+        },
+        "a81d8d6f3f3849c68f20c41e": {
+          "type": "block",
+          "data": {
+            "name": "",
+            "steps": [
+              "a81d8d6f3f3849c68f20c419"
+            ]
+          },
+          "nodeID": "a81d8d6f3f3849c68f20c41e",
+          "coords": [
+            3150,
+            800
+          ]
+        }
+      },
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "78a936ef47904ca5bd97d8ea"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "1f0fc35406574944a77c55da"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "d3465bc2e9f84fd49848da3a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "fc36929190f14689aa4a479a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "b19300e542b84ccfab6528fa"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "8cab69b10aa34aa1b714fbda"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "58a7f5e634e641c5a10f78ba"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "dd21ade6a0234719bbb8415a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "8f863fee84ce4e9f97cc79fa"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "f1c1d85cd29f46b68bac907a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "239dd07c77cb4e258096f07a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "03cebcc14da74235b602669a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "74e73b81dcc34939ae78f71a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "025001489ccd4489958dc09a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "ed844f07fa0c466dae6a266a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "8a0c4d3e431d455b8c7b0d3a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "a292a93f303d4c7695da988a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "9884ab30c53e4dda9d799f8a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "68e7fde71aa449b1b7d2998a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "1826349c049644faae4ede2a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "7a50d55b42e8476e821ac3da"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "4047dd2c10344c5a9c49046a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "21efe53aa8994b148a2105ea"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "f34150ceb2bd49cf9d33456a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "c187ce76092e406a927b591a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "7d6b0f2bf14d45ffa9b1fe2a"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "0362122c69b8412b89d734aa"
+        },
+        {
+          "type": "NODE",
+          "sourceID": "a81d8d6f3f3849c68f20c41a"
+        }
+      ],
+      "menuNodeIDs": []
+    }
+  },
+  "variableStates": []
+}

@@ -107,7 +107,7 @@ def convert_nlu_train_to_vf(nlu_train_path, vf_output_path, dataset_name):
     with open(vf_output_path, 'w') as new_vf_file:
         json.dump(vf_data, new_vf_file, indent=2)
 
-for dataset in ["banking77_10","clinc150_10","hwu64_10"]:
-    convert_nlu_train_to_vf(Path(f"VFNLUTests/data/{dataset}/train"), Path(f"VFNLUTests/vf_files/{dataset}.vf"),f"{dataset}")
+for dataset in ["banking77_10","clinc150_10","hwu64_10","curekart"]:
+    convert_nlu_train_to_vf(Path(f"../VFNLUTests/data/{dataset}/train"), Path(f"../VFNLUTests/vf_files/{dataset}.vf"),f"{dataset}")
 
 

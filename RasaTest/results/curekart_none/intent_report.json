@@ -1,0 +1,202 @@
+{
+  "EXPIRY_DATE": {
+    "precision": 1.0,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9565217391304348,
+    "support": 12,
+    "confused_with": {
+      "RESUME_DELIVERY": 1
+    }
+  },
+  "CONSULT_START": {
+    "precision": 0.75,
+    "recall": 0.9375,
+    "f1-score": 0.8333333333333334,
+    "support": 16,
+    "confused_with": {
+      "RECOMMEND_PRODUCT": 1
+    }
+  },
+  "CHAT_WITH_AGENT": {
+    "precision": 0.8461538461538461,
+    "recall": 0.7857142857142857,
+    "f1-score": 0.8148148148148148,
+    "support": 14,
+    "confused_with": {
+      "CALL_CENTER": 2,
+      "RESUME_DELIVERY": 1
+    }
+  },
+  "DELAY_IN_PARCEL": {
+    "precision": 1.0,
+    "recall": 0.1,
+    "f1-score": 0.18181818181818182,
+    "support": 10,
+    "confused_with": {
+      "RESUME_DELIVERY": 5,
+      "ORDER_STATUS": 3,
+      "REFUNDS_RETURNS_REPLACEMENTS": 1
+    }
+  },
+  "SIGN_UP": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "RESUME_DELIVERY": {
+    "precision": 0.21428571428571427,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.3243243243243243,
+    "support": 9,
+    "confused_with": {
+      "ORDER_STATUS": 2,
+      "RECOMMEND_PRODUCT": 1
+    }
+  },
+  "CALL_CENTER": {
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1-score": 0.8333333333333333,
+    "support": 5,
+    "confused_with": {}
+  },
+  "ORDER_TAKING": {
+    "precision": 0.6666666666666666,
+    "recall": 0.8421052631578947,
+    "f1-score": 0.744186046511628,
+    "support": 19,
+    "confused_with": {
+      "ORDER_STATUS": 2,
+      "RESUME_DELIVERY": 1
+    }
+  },
+  "CHECK_PINCODE": {
+    "precision": 1.0,
+    "recall": 0.4090909090909091,
+    "f1-score": 0.5806451612903226,
+    "support": 22,
+    "confused_with": {
+      "RESUME_DELIVERY": 10,
+      "RECOMMEND_PRODUCT": 2
+    }
+  },
+  "PAYMENT_AND_BILL": {
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.4,
+    "support": 3,
+    "confused_with": {
+      "ORDER_QUERY": 1,
+      "PORTAL_ISSUE": 1
+    }
+  },
+  "MODIFY_ADDRESS": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "USER_GOAL_FORM": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "STORE_INFORMATION": {
+    "precision": 1.0,
+    "recall": 0.7272727272727273,
+    "f1-score": 0.8421052631578948,
+    "support": 11,
+    "confused_with": {
+      "RECOMMEND_PRODUCT": 1,
+      "ORDER_TAKING": 1
+    }
+  },
+  "SIDE_EFFECT": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "CANCEL_ORDER": {
+    "precision": 0.967741935483871,
+    "recall": 0.967741935483871,
+    "f1-score": 0.967741935483871,
+    "support": 31,
+    "confused_with": {
+      "RECOMMEND_PRODUCT": 1
+    }
+  },
+  "REFUNDS_RETURNS_REPLACEMENTS": {
+    "precision": 0.9473684210526315,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.9473684210526315,
+    "support": 19,
+    "confused_with": {
+      "MODIFY_ADDRESS": 1
+    }
+  },
+  "RECOMMEND_PRODUCT": {
+    "precision": 0.9375,
+    "recall": 0.8048780487804879,
+    "f1-score": 0.8661417322834646,
+    "support": 205,
+    "confused_with": {
+      "None": 17,
+      "CONSULT_START": 5
+    }
+  },
+  "FRANCHISE": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9166666666666666,
+    "support": 12,
+    "confused_with": {
+      "ORDER_TAKING": 1
+    }
+  },
+  "ORIGINAL_PRODUCT": {
+    "precision": 1.0,
+    "recall": 0.7906976744186046,
+    "f1-score": 0.8831168831168831,
+    "support": 43,
+    "confused_with": {
+      "RECOMMEND_PRODUCT": 5,
+      "CHAT_WITH_AGENT": 1
+    }
+  },
+  "ORDER_STATUS": {
+    "precision": 0.5,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.625,
+    "support": 12,
+    "confused_with": {
+      "RESUME_DELIVERY": 1,
+      "ORDER_TAKING": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.8484848484848485,
+    "recall": 0.7982456140350878,
+    "f1-score": 0.8225988700564971,
+    "support": 456
+  },
+  "macro avg": {
+    "precision": 0.8355334482297554,
+    "recall": 0.7989517965819039,
+    "f1-score": 0.7787130346730321,
+    "support": 456
+  },
+  "weighted avg": {
+    "precision": 0.9012068432298695,
+    "recall": 0.7982456140350878,
+    "f1-score": 0.8269828179922872,
+    "support": 456
+  },
+  "accuracy": 0.7982456140350878
+}
