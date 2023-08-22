@@ -100,8 +100,7 @@ def run_benchmark_vfnlu(datasets,local_result_load=False,none_tests=True):
         return f1_scores, accuracy_scores
     f1_scores = []
     accuracy_scores = []
-    keys = [hwu_api_key,clinc_api_key,banking_api_key,curekart_api_key][:len(datasets)]
-    keys = [curekart_api_key]
+    keys = [hwu_api_key,clinc_api_key,banking_api_key,curekart_api_key]
     for dataset, key in zip(datasets,keys):
         accuracy,f1 = run_vf_intent_test_nlu_format(f"./VFNLUTests/data/{dataset}/test",key)
         print("Accuracy", accuracy)
@@ -110,4 +109,3 @@ def run_benchmark_vfnlu(datasets,local_result_load=False,none_tests=True):
         accuracy_scores.append(accuracy)
 
     return f1_scores, accuracy_scores
-

@@ -2,30 +2,32 @@ import csv
 
 import boto3
 
-client = boto3.client('lex-runtime')
-
-
-def run_test(bot_name, utterance):
-	bot_alias = 'TestLocal'
+def run_test(client,bot_id,bot_alias, utterance):
 	# Run inference
-	response = client.post_text(
-		botName=bot_name,
-		botAlias=bot_alias,
-		userId='UserID1',  # You can specify the user ID as needed
-		inputText=utterance
+	response = client.recognize_text(
+		botId=bot_id,
+		botAliasId=bot_alias,
+		localeId='en_US',
+		sessionId='UserID1',  # You can specify the user ID as needed
+		text=utterance
 	)
 
 	# Print the bot's response
-	intent_name, confidence = response['intentName'], response['nluIntentConfidence']['score']
+	confidence = 0
+	intent_name = response["sessionState"]['intent']['name']
+	if 'nluConfidence' in response['interpretations'][0]:
+		confidence =  response['interpretations'][0]['nluConfidence']['score']
 	print('Bot response: ', intent_name, confidence)
 	return intent_name
 
 
 datasets = ["hwu64_10","clinc150_10","banking77_10","curekart"]
 bot_names = ["Hwu64", "Clinc150", "Banking77", "CureKart"]
+bot_aliases = ["TSTALIASID","TSTALIASID","TSTALIASID","TSTALIASID"]
 bot_ids = ["SQ8M15QC3V","LKAWF92WBT","N6XLYC6MEA","ODJLMICUPR"]
 
-def run_dataset_eval_lex(dataset, bot_name):
+def run_dataset_eval_lex(dataset, bot_id,bot_alias):
+	client = boto3.client('lexv2-runtime')
 	with open(dataset, newline='') as lines:
 		csv_reader = csv.reader(lines, quotechar='"', delimiter=',', quoting=csv.QUOTE_ALL, skipinitialspace=True)
 		next(csv_reader)
@@ -33,7 +35,7 @@ def run_dataset_eval_lex(dataset, bot_name):
 		actual_intents = []
 		for l in csv_reader:
 			utterance = l[3]
-			predicted_intent = run_test(bot_name, utterance)
+			predicted_intent = run_test(client,bot_id,bot_alias, utterance)
 			actual_intents.append(l[4])
 			if predicted_intent == "":
 				predicted_intent = "FallbackIntent"
@@ -48,15 +50,15 @@ def run_dataset_eval_lex(dataset, bot_name):
 intent_ids = []
 
 
-def run_benchmark_lex(datasets, bot_names=bot_ids, local_result_load=False):
+def run_benchmark_lex(datasets, bot_ids=bot_ids,bot_aliases=bot_aliases, local_result_load=False):
 	if local_result_load:
-		f1_scores = [0,0,0,0]
-		accuracy_scores = []
+		f1_scores = [0.6974357949832423,0.6669900181234607,0.755719049261228,0.6241867003288128]
+		accuracy_scores = [0.6589219330855018,0.5668888888888889,0.7100649350649351,0.7952069716775599]
 		return f1_scores, accuracy_scores
 	f1_scores = []
 	accuracy_scores = []
-	for dataset, bot_name in zip(datasets, bot_names):
-		accuracy, f1 = run_dataset_eval_lex(f"LexTest/data/{dataset}_lex/test.csv",bot_name)
+	for dataset, bot_id, bot_alias in zip(datasets, bot_ids, bot_aliases):
+		accuracy, f1 = run_dataset_eval_lex(f"LexTest/data/{dataset}_lex/test.csv",bot_id,bot_alias)
 		print("Accuracy", accuracy)
 		print("F1 Score: ", f1)
 		f1_scores.append(f1)

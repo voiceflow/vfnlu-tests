@@ -60,10 +60,10 @@ def convert_dataset_to_dialogflow_cx(datasets=["banking77_10", "hwu64_10", "clin
         for split in ["train","test"]:
             suffix, data = _extract_data(parent_dir, dataset, split, none_intent_training_utterances)
             # check if the directory exists
-            if not os.path.exists(parent_dir/f"DialogflowCXTest/data/{dataset}_dialogflow_cx_{suffix}"):
-                os.mkdir(parent_dir/f"DialogflowCXTest/data/{dataset}_dialogflow_cx_{suffix}")
+            if not os.path.exists(parent_dir/f"DialogflowCXTest/data/{dataset}_dialogflow_cx{suffix}"):
+                os.mkdir(parent_dir/f"DialogflowCXTest/data/{dataset}_dialogflow_cx{suffix}")
 
-            with open(parent_dir/f"DialogflowCXTest/data/{dataset}_dialogflow_cx_{suffix}/{split}.csv","w") as f_dialogflow:
+            with open(parent_dir/f"DialogflowCXTest/data/{dataset}_dialogflow_cx{suffix}/{split}.csv","w") as f_dialogflow:
                 f_dialogflow.write("Intent Display Name,Language,Phrase\n")
                 for intent, examples in data.items():
                     for example in examples:
@@ -109,7 +109,5 @@ none_utterances = ["I want pizza", "Order a burger", "My name is Ronald", "1234"
 #
 #
 # convert_dataset_to_dialogflow_cx()
-# convert_dataset_to_dialogflow_cx(none_intent_training_utterances=none_utterances)
-
-
-convert_dataset_to_lex()
+convert_dataset_to_dialogflow_cx(none_intent_training_utterances=none_utterances)
+#convert_dataset_to_lex(one_intent_training_utterances=none_utterances)
