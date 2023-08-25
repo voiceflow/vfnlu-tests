@@ -21,11 +21,6 @@ def run_test(client,bot_id,bot_alias, utterance):
 	return intent_name
 
 
-datasets = ["hwu64_10","clinc150_10","banking77_10","curekart"]
-bot_names = ["Hwu64", "Clinc150", "Banking77", "CureKart"]
-bot_aliases = ["TSTALIASID","TSTALIASID","TSTALIASID","TSTALIASID"]
-bot_ids = ["SQ8M15QC3V","LKAWF92WBT","N6XLYC6MEA","ODJLMICUPR"]
-
 def run_dataset_eval_lex(dataset, bot_id,bot_alias):
 	client = boto3.client('lexv2-runtime')
 	with open(dataset, newline='') as lines:
@@ -47,10 +42,7 @@ def run_dataset_eval_lex(dataset, bot_id,bot_alias):
 																	   average='macro')
 
 
-intent_ids = []
-
-
-def run_benchmark_lex(datasets, bot_ids=bot_ids,bot_aliases=bot_aliases, local_result_load=False):
+def run_benchmark_lex(datasets, bot_ids,bot_aliases, local_result_load=False):
 	if local_result_load:
 		f1_scores = [0.6974357949832423,0.6669900181234607,0.755719049261228,0.6241867003288128]
 		accuracy_scores = [0.6589219330855018,0.5668888888888889,0.7100649350649351,0.7952069716775599]

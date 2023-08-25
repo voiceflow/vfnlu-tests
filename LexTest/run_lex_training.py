@@ -4,7 +4,20 @@ import boto3
 import json
 import os
 
+from config import read_project_config
+lex_config_data = read_project_config()["lex"]
+BOTVERSION=  "DRAFT"
+LOCALEID = "en_US"
+
 def extract_zip(zip_path):
+    """
+    Extracts a ZIP file of the LEX 1 formatted intents
+    Args:
+        zip_path:
+
+    Returns:
+
+    """
     extracted_files = []
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
         for name in zip_ref.namelist():
@@ -24,14 +37,6 @@ def extract_zip(zip_path):
                 extracted_files.append(temp_file_path)
     return extracted_files
 
-
-
-
-
-
-
-
-import boto3
 
 def create_lexv2_intent(botId, botVersion, localeId, intentName, description, sampleUtterances,
                         parentIntentSignature=None, dialogCodeHook=None, fulfillmentCodeHook=None,
@@ -80,10 +85,6 @@ def create_lexv2_intent(botId, botVersion, localeId, intentName, description, sa
 
     return response
 
-# Example usage:
-botVersion=  "DRAFT"
-localeId = "en_US"
-
 
 def create_training_for_dataset(dataset, botId):
     zip_path = f"data/{dataset}-lexv1-model.zip"
@@ -91,11 +92,10 @@ def create_training_for_dataset(dataset, botId):
     for intent_file in intent_files:
         with open(intent_file, 'r') as intent_file_fp:
             intent_definition = json.load(intent_file_fp)
-            response = create_lexv2_intent(botId, botVersion, localeId, intent_definition['resource']['name'], intent_definition['resource']['description'],sampleUtterances=intent_definition['resource']['sampleUtterances'])
+            response = create_lexv2_intent(botId, BOTVERSION, LOCALEID, intent_definition['resource']['name'], intent_definition['resource']['description'],sampleUtterances=intent_definition['resource']['sampleUtterances'])
             print(response)
 
-datasets = ["banking77_10","hwu64_10","clinc150_10","curekart"]
-bot_ids = ["N6XLYC6MEA","SQ8M15QC3V","LKAWF92WBT","ODJLMICUPR"]
+
 i = 0
-for dataset,bot_id in zip(datasets,bot_ids):
+for dataset,bot_id in zip(lex_config_data["datasets"],lex_config_data["bot_ids"]):
     create_training_for_dataset(dataset,bot_id)

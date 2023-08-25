@@ -2,20 +2,26 @@ import os
 from collections import defaultdict
 from pathlib import Path
 from dotenv import load_dotenv
-
+import yaml
 import requests
 from uuid import uuid4
-# View our quick start guide to get your API key:
-# https://www.voiceflow.com/api/dialog-manager#section/Quick-Start
 
 load_dotenv()
 banking_api_key = os.getenv("BANKING_API_KEY")
 hwu_api_key = os.getenv("HWU_API_KEY")
 clinc_api_key = os.getenv("CLINC_API_KEY")
 curekart_api_key = os.getenv("CUREKART_API_KEY")
+keys = [hwu_api_key, clinc_api_key, banking_api_key, curekart_api_key]
 
-import yaml
-def read_intents_from_rasa_test_file(file_path):
+def read_intents_from_rasa_test_file(file_path:str):
+    """
+    Reads data from rasa format
+    Args:
+        file_path:
+
+    Returns:
+
+    """
     intent_dict =defaultdict(list)
     with open(file_path, 'r') as file:
         data = yaml.safe_load(file)
@@ -26,7 +32,8 @@ def read_intents_from_rasa_test_file(file_path):
 
     return intent_dict
 
-def read_intents_from_nlu_format(folder_path):
+
+def read_intents_from_nlu_format(folder_path:str):
     """
     Expected structure, seq.in and labels.txt
     """
@@ -39,14 +46,25 @@ def read_intents_from_nlu_format(folder_path):
 
     return intent_dict
 
-#TODO add F1 score per intent
-def run_vf_intent_test(intents_dict,api_key):
+
+def run_vf_intent_test(intents_dict: dict[str,list[str]],api_key:str):
+    """
+    Run throught all the intents and utterances in the intents_dict and return the accuracy and f1
+    Args:
+        intents_dict:
+        api_key:
+
+    Returns:
+        accuracy, f1
+
+    """
     correct = 0
     total_utterances = 0
     predicted_intents = []
     actual_intents = []
     for intent, utterances in intents_dict.items():
         for utterance in utterances:
+            # uuid for each user
             user_id = uuid4()
             user_input = utterance  # User's message to your Voiceflow assistant
             total_utterances +=1
@@ -58,7 +76,6 @@ def run_vf_intent_test(intents_dict,api_key):
                 json=body,
                 headers={"Authorization": api_key},
             )
-
 
             # Log the response
             r = response.json()
@@ -76,7 +93,6 @@ def run_vf_intent_test(intents_dict,api_key):
     #f1 score
     from sklearn.metrics import f1_score
     return correct / total_utterances, f1_score(actual_intents, predicted_intents, average='macro')
-
 
 
 def run_vf_intent_test_rasa_file(file_path):
@@ -100,9 +116,9 @@ def run_benchmark_vfnlu(datasets,local_result_load=False,none_tests=True):
         return f1_scores, accuracy_scores
     f1_scores = []
     accuracy_scores = []
-    keys = [hwu_api_key,clinc_api_key,banking_api_key,curekart_api_key]
+    base_path = Path(__file__).parent / "data"
     for dataset, key in zip(datasets,keys):
-        accuracy,f1 = run_vf_intent_test_nlu_format(f"./VFNLUTests/data/{dataset}/test",key)
+        accuracy,f1 = run_vf_intent_test_nlu_format(str(base_path/ dataset/ "test"),key)
         print("Accuracy", accuracy)
         print("F1 Score: ",f1)
         f1_scores.append(f1)

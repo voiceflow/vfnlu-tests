@@ -1,7 +1,15 @@
 import csv
-
-import numpy as np
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 from google.cloud import dialogflowcx_v3beta1 as dialogflow
+from config import read_project_config
+from sklearn.metrics import f1_score, accuracy_score
+
+dialogflow_config_data = read_project_config()["dialogflow"]
+load_dotenv()
+project_id = os.getenv("DF_PROJECT_ID")
+location_id = os.getenv("DF_LOCATION_ID")
 
 
 def detect_intent(session_path, session_client, text):
@@ -30,8 +38,6 @@ def detect_intent(session_path, session_client, text):
 
 def run_dataset_eval_dialogflow_cx(dataset, agent_id):
 	# Replace these variables with the appropriate values for your setup
-	project_id = "denys-staging-1111"
-	location_id = "us-central1"
 	session_id = "1"
 	session_client = dialogflow.services.sessions.SessionsClient(client_options={"api_endpoint": f"{location_id}-dialogflow.googleapis.com"})
 	session_path = session_client.session_path(project_id, location_id, agent_id, session_id)
@@ -41,48 +47,50 @@ def run_dataset_eval_dialogflow_cx(dataset, agent_id):
 		next(csv_reader)
 		predicted_intents = []
 		actual_intents = []
+		none_counter = 0
 		for l in csv_reader:
 			utterance = l[2]
 			predicted_intent = detect_intent(session_path,session_client, utterance)
 			actual_intents.append(l[0])
 			if predicted_intent == "":
-				predicted_intent = "None_Intent"
+				predicted_intent = "None"
+				none_counter += 1
 			predicted_intents.append(predicted_intent)
+		print("None Counter", none_counter)
 
-
-	from sklearn.metrics import f1_score, accuracy_score
 
 	return accuracy_score(actual_intents,predicted_intents), f1_score(actual_intents, predicted_intents, average='macro')
 
 
-intent_ids = []
+def run_benchmark_dialogflow_cx(datasets=None,agent_ids=None, local_result_load=False,is_none=False):
+	if not agent_ids:
+		if is_none:
+			agent_ids = dialogflow_config_data["agents_ids"]
+		else:
+			agent_ids = dialogflow_config_data["agents_ids_none"]
 
-agents_ids = ["ca4266e9-52f6-43fa-8d00-d25c8fb63e94","00d8ca3c-eae8-4420-8cbc-72ac5207cb77","0394f14a-83e0-467f-af48-92eedfa48d42","222d90cc-78b5-41ff-a593-f9e6505bd19d"]
-def run_benchmark_dialogflow_cx(datasets,agent_ids=agents_ids, local_result_load=False,is_none=False):
-	if is_none:
-		agents_ids = ["7da5a9c1-2839-49fd-8aef-8afa4cf6743b",
-					  "61bd91c7-ddf1-4300-b751-bea13f578304","09ad8cd3-b3b0-4447-8355-ca9709f028cf", "97f8a767-3e64-43eb-851e-a97f56768ba5"]
-	if local_result_load:
-		f1_scores = [0.7114360174991043, 0.8292905394131249, 0.8114345728752027,0.6552839455156556] #  0.09374454531706725
-		accuracy_scores = [0.680594243268338, 0.805820928682515, 0.7935064935064935,0.7930283224400871 ] # 0.5417369308600337
+
+	if local_result_load and is_none:
+		f1_scores = [0.4038897971948421, 0.7987145065110172, 0.7662692956454572, 0.5989294749178822]
+		accuracy_scores = [0.41225626740947074, 0.7762719395689847, 0.7461038961038962, 0.7712418300653595]
 		return f1_scores, accuracy_scores
+	elif local_result_load:
+		f1_scores = [0.7114360174991043, 0.8292905394131249, 0.8114345728752027,0.6552839455156556]
+		accuracy_scores = [0.680594243268338, 0.805820928682515, 0.7935064935064935,0.7930283224400871 ]
+		return f1_scores, accuracy_scores
+
 	f1_scores = []
 	accuracy_scores = []
-	i = 0
-	#agent_ids = agent_ids[:len(datasets)]
 	for dataset,agent_id in zip(datasets,agent_ids):
 		if is_none:
 			suffix = "_none"
 		else:
 			suffix = ""
-		accuracy,f1 = run_dataset_eval_dialogflow_cx(f"DialogflowCXTest/data/{dataset}_dialogflow_cx/test.csv",agent_id)
+		base_path = Path(__file__).parent / "data"
+		accuracy,f1 = run_dataset_eval_dialogflow_cx(base_path/f"{dataset}_dialogflow_cx{suffix}"/"test.csv",agent_id)
 		print("Accuracy", accuracy)
 		print("F1 Score: ",f1)
 		f1_scores.append(f1)
 		accuracy_scores.append(accuracy)
 
 	return f1_scores, accuracy_scores
-
-#datasets = ["banking77_10","hwu64_10","clinc150_10","curekart"]
-
-#run_benchmark_dialogflow_cx(datasets,agents_ids)
