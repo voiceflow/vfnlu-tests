@@ -22,7 +22,7 @@ rasa_f1_scores, rasa_accuracy_scores = run_rasa_benchmark(datasets,none_tests=Fa
 rasa_f1_scores_none, rasa_accuracy_scores_none = run_rasa_benchmark(datasets,none_tests=True,local_result_load=True, retrain=False)
 vf_f1_scores_none, vf_accuracy_scores_none = run_benchmark_vfnlu(datasets,local_result_load=True,none_tests=True)
 vf_f1_scores, vf_accuracy_scores = run_benchmark_vfnlu(datasets,local_result_load=True,none_tests=False)
-df_f1_scores, df_accuracy_scores = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_ids,local_result_load=False)
+df_f1_scores, df_accuracy_scores = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_ids,local_result_load=True)
 df_f1_scores_none, df_accuracy_scores_none = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_none_ids,local_result_load=True,is_none=True)
 
 

@@ -60,14 +60,14 @@ Rasa shows minimal changes in accuracy between the base dataset and one with exp
 | None intent %        | 1.6%  | 0.4%     | 0.4%      | 3.9%     |
 | Unexplained Variance | -0.3% | -0.2%    | - 3.1%    | -2.1%    |
 
-### Comparison DFCX with Enriched None (Fallback) intent 
-Dialogflow CX is quite sensitive when enriching their built in None Intent (called Fallback). For DFCX many of the mismatches seem to be redirected to the None intent which is an interesting pattern.
+### Comparison DFCX with Enriched Default Negative Intent 
+Dialogflow CX is quite sensitive when enriching their built in None Intent (called Default Negative Intent). For DFCX many of the mismatches seem to be redirected to the None intent which is an interesting pattern.
 ![DFCXNone](figures/DFCX_accuracy.png)
 
 | Dataset              | HWU64  | CLINC150 | Banking77 | CureKart |
-|----------------------|--------|--------|-----------|----------|
-| DFCX Base            | 68.1%  | 80.6%  | 79.4%     | 79.3%    |
-| DFCX None            | 41.4%  | 77.6%  | 74.6%     | 77.1%    |
-| Difference           | 26.7%  | 3.0%   | 4.8%      | 2.1%     |
-| None intent %        | 40.3%  | 16.9%  | 8.6%      | 8.9%     |
-| Unexplained Variance | -13.4% | -13.9% | -3.8%     | -6.8%    |
+|----------------------|--------|----------|-----------|----------|
+| DFCX Base            | 68.5%  | 80.6%    | 79.4%     | 79.3%    |
+| DFCX None            | 41.2%  | 77.6%    | 74.6%     | 77.1%    |
+| Difference           | 27.3%  | 3.0%     | 4.8%      | 2.1%     |
+| None intent %        | 40.3%  | 16.9%    | 8.6%      | 8.9%     |
+| Unexplained Variance | -13.0% | -13.9%   | -3.8%     | -6.8%    |
