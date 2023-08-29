@@ -70,7 +70,7 @@ def convert_nlu_train_to_vf(nlu_train_path, vf_output_path, dataset_name):
     for label, seq in zip(label_data, seq_data):
         intent_utterances_dict[label].append(seq)
 
-    with open('../VFNLUTests/vf_files/vf_mockfile.vf', 'r') as vf_file:
+    with open('../benchmarks/VFNLUTests/vf_files/vf_mockfile.vf', 'r') as vf_file:
         vf_data = json.load(vf_file, object_pairs_hook=OrderedDict)
 
 

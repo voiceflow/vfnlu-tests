@@ -4,7 +4,7 @@ import boto3
 import json
 import os
 
-from config import read_project_config
+from src.benchmarks.config import read_project_config
 lex_config_data = read_project_config()["lex"]
 BOTVERSION=  "DRAFT"
 LOCALEID = "en_US"

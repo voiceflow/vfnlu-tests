@@ -1,10 +1,10 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-from DialogflowCXTest.run_dialogflow_benchmark import run_benchmark_dialogflow_cx
-from LexTest.run_lex_benchmark import run_benchmark_lex
-from RasaTest.run_rasa_benchmark import run_rasa_benchmark
-from VFNLUTests.run_voiceflow_benchmark import run_benchmark_vfnlu
+from src.benchmarks.DialogflowCXTest.run_dialogflow_benchmark import run_benchmark_dialogflow_cx
+from src.benchmarks.LexTest.run_lex_benchmark import run_benchmark_lex
+from src.benchmarks.RasaTest.run_rasa_benchmark import run_rasa_benchmark
+from src.benchmarks.VFNLUTests.run_voiceflow_benchmark import run_benchmark_vfnlu
 from config import read_project_config
 
 lex_config = read_project_config()["lex"]
@@ -17,13 +17,13 @@ df_agent_ids = df_config["agents_ids"]
 df_agent_none_ids = df_config["agents_ids_none"]
 
 
-lex_f1_scores, lex_accuracy_scores = run_benchmark_lex(datasets,bot_ids=lex_bot_ids, bot_aliases=lex_bot_aliases,local_result_load=True)
+lex_f1_scores, lex_accuracy_scores = run_benchmark_lex(datasets,bot_ids=lex_bot_ids, bot_aliases=lex_bot_aliases,local_result_load=False)
 rasa_f1_scores, rasa_accuracy_scores = run_rasa_benchmark(datasets,none_tests=False,local_result_load=True,retrain=False)
 rasa_f1_scores_none, rasa_accuracy_scores_none = run_rasa_benchmark(datasets,none_tests=True,local_result_load=True, retrain=False)
 vf_f1_scores_none, vf_accuracy_scores_none = run_benchmark_vfnlu(datasets,local_result_load=True,none_tests=True)
 vf_f1_scores, vf_accuracy_scores = run_benchmark_vfnlu(datasets,local_result_load=True,none_tests=False)
-df_f1_scores, df_accuracy_scores = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_ids,local_result_load=True)
-df_f1_scores_none, df_accuracy_scores_none = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_none_ids,local_result_load=False,is_none=True)
+df_f1_scores, df_accuracy_scores = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_ids,local_result_load=False)
+df_f1_scores_none, df_accuracy_scores_none = run_benchmark_dialogflow_cx(datasets,agent_ids=df_agent_none_ids,local_result_load=True,is_none=True)
 
 
 

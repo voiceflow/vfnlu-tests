@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 from google.cloud import dialogflowcx_v3beta1 as dialogflow
-from config import read_project_config
+from src.benchmarks.config import read_project_config
 from sklearn.metrics import f1_score, accuracy_score
 
 dialogflow_config_data = read_project_config()["dialogflow"]
@@ -71,12 +71,12 @@ def run_benchmark_dialogflow_cx(datasets=None,agent_ids=None, local_result_load=
 
 
 	if local_result_load and is_none:
-		f1_scores = [0.4038897971948421, 0.7987145065110172, 0.7662692956454572, 0.5989294749178822]
-		accuracy_scores = [0.41225626740947074, 0.7762719395689847, 0.7461038961038962, 0.7712418300653595]
+		f1_scores = [0.4079240250458726, 0.8089818636087039, 0.74597812696408, 0.6149963914224815]
+		accuracy_scores = [0.4141132776230269, 0.7817777777777778, 0.7386363636363636, 0.7777777777777778]
 		return f1_scores, accuracy_scores
 	elif local_result_load:
-		f1_scores = [0.7114360174991043, 0.8292905394131249, 0.8114345728752027,0.6552839455156556]
-		accuracy_scores = [0.680594243268338, 0.805820928682515, 0.7935064935064935,0.7930283224400871 ]
+		f1_scores = [0.6885960813594082, 0.8292905394131249, 0.8114345728752027,0.6552839455156556]
+		accuracy_scores = [0.6555246053853296, 0.805820928682515, 0.7935064935064935,0.7930283224400871 ]
 		return f1_scores, accuracy_scores
 
 	f1_scores = []

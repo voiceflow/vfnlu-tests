@@ -44,8 +44,8 @@ def run_dataset_eval_lex(dataset, bot_id,bot_alias):
 
 def run_benchmark_lex(datasets, bot_ids,bot_aliases, local_result_load=False):
 	if local_result_load:
-		f1_scores = [0.6974357949832423,0.6669900181234607,0.755719049261228,0.6241867003288128]
-		accuracy_scores = [0.6589219330855018,0.5668888888888889,0.7100649350649351,0.7952069716775599]
+		f1_scores = [0.6241867003288128,0.6669900181234607,0.755719049261228,0.6241867003288128]
+		accuracy_scores = [0.7952069716775599,0.5668888888888889,0.7100649350649351,0.7952069716775599]
 		return f1_scores, accuracy_scores
 	f1_scores = []
 	accuracy_scores = []

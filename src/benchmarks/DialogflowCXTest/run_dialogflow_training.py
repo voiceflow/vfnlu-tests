@@ -8,13 +8,15 @@ from dotenv import load_dotenv
 from google.cloud import dialogflowcx_v3beta1 as dialogflow
 from google.protobuf import field_mask_pb2
 
-from config import read_project_config
+from src.benchmarks.config import read_project_config
 
 DEFUALT_FLOW_ID = "00000000-0000-0000-0000-000000000000"
+DEFAULT_NONE_INTENT_ID = "00000000-0000-0000-0000-000000000001"
 dialogflow_config_data = read_project_config()["dialogflow"]
 load_dotenv()
 project_id = os.getenv("DF_PROJECT_ID")
 location_id = os.getenv("DF_LOCATION_ID")
+
 
 def create_intent(project_id, agent_id, location_id, intent_display_name, training_phrases_parts,update=False):
     # Create a client
@@ -114,7 +116,7 @@ def create_training_for_dataset(dataset_name,agent_id,target_page,is_none=False)
             ) for phrase in utterances]
         if intent == "None":
             # get fallback intent
-            intent_object = create_intent(project_id, agent_id, location_id, "00000000-0000-0000-0000-000000000001", training_phrases_parts,update=True)
+            intent_object = create_intent(project_id, agent_id, location_id, DEFAULT_NONE_INTENT_ID, training_phrases_parts,update=True)
         else:
             training_phrases_parts = [
                 dialogflow.Intent.TrainingPhrase(
@@ -139,5 +141,5 @@ def create_datasets(datasets, agents_ids, target_pages,is_none=False):
         create_training_for_dataset(dataset, agent_id, target_page,is_none=is_none)
 
 
-create_datasets(dialogflow_config_data["datasets"], dialogflow_config_data["agents_ids"], dialogflow_config_data["target_pages"])
+#create_datasets(dialogflow_config_data["datasets"], dialogflow_config_data["agents_ids"], dialogflow_config_data["target_pages"])
 create_datasets(dialogflow_config_data["datasets"], dialogflow_config_data["agents_ids_none"], dialogflow_config_data["target_pages_none"],is_none=True)
