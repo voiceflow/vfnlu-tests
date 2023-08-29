@@ -12,14 +12,14 @@ The benchmarks chose are the popular intent classification benchmarks of HWU64, 
 3. After uploading the files, head to the integrations tag on the left side of the screen and copy the DM key.
 4. Paste the DM key in a .env file under the corresponding project key name.
 5. Train the model either through the VFNLU or calling the train NLU function in `run_voiceflow_benchmark.py`
-6. Run the evaluation by running `compare_benchmarks.py`
+6. Run the evaluation by running `compare_benchmarks.py` and change `local_result_load` to `False` to avoid cached results
 
 *the free version of Voiceflow only allows 2 projects at a time, so you will have to delete a benchmark to upload the next one.
 
 ## Extending the benchmarks
 To extend the benchmarks, you can do the following steps:
 1. Add addition benchmarks to VFNLU/data folder. They should have a seq.in file and a label file and have a test and train sub folder.
-2. Run the Rasa, DF CX or Lex converters under nlu_rasa.py
+2. Run the Rasa, DF CX or Lex converters under each respective folder.
 3. Run the VF file created under `helpers/create_voiceflow_project.py`
 4. Open a pull request with the new datafiles and the new VF files.
 

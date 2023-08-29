@@ -57,4 +57,3 @@ def run_benchmark_lex(datasets, bot_ids,bot_aliases, local_result_load=False):
 		accuracy_scores.append(accuracy)
 	return f1_scores, accuracy_scores
 
-# [0.61, 0.79]
