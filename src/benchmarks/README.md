@@ -67,7 +67,7 @@ Dialogflow CX is quite sensitive when enriching their built in None Intent (call
 | Dataset              | HWU64  | CLINC150 | Banking77 | CureKart |
 |----------------------|--------|--------|-----------|----------|
 | DFCX Base            | 68.1%  | 80.6%  | 79.4%     | 79.3%    |
-| DFCX None            | 41.2%  | 77.6%  | 74.6%     | 77.1%    |
-| Difference           | 26.9%  | 3.0%   | 4.8%      | 2.1%     |
+| DFCX None            | 41.4%  | 77.6%  | 74.6%     | 77.1%    |
+| Difference           | 26.7%  | 3.0%   | 4.8%      | 2.1%     |
 | None intent %        | 40.3%  | 16.9%  | 8.6%      | 8.9%     |
 | Unexplained Variance | -13.4% | -13.9% | -3.8%     | -6.8%    |

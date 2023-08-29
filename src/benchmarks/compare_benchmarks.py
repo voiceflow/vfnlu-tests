@@ -17,7 +17,7 @@ df_agent_ids = df_config["agents_ids"]
 df_agent_none_ids = df_config["agents_ids_none"]
 
 
-lex_f1_scores, lex_accuracy_scores = run_benchmark_lex(datasets,bot_ids=lex_bot_ids, bot_aliases=lex_bot_aliases,local_result_load=False)
+lex_f1_scores, lex_accuracy_scores = run_benchmark_lex(datasets,bot_ids=lex_bot_ids, bot_aliases=lex_bot_aliases,local_result_load=True)
 rasa_f1_scores, rasa_accuracy_scores = run_rasa_benchmark(datasets,none_tests=False,local_result_load=True,retrain=False)
 rasa_f1_scores_none, rasa_accuracy_scores_none = run_rasa_benchmark(datasets,none_tests=True,local_result_load=True, retrain=False)
 vf_f1_scores_none, vf_accuracy_scores_none = run_benchmark_vfnlu(datasets,local_result_load=True,none_tests=True)
