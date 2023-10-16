@@ -24,7 +24,7 @@ To extend the benchmarks, you can do the following steps:
 4. Open a pull request with the new datafiles and the new VF files.
 
 ## Results
-VFNLU outperforms DialogFlow CX (DFCX), Rasa and Lex v2  on the four benchmarks included.
+VFNLU outperforms DialogFlow CX, Lex v2 and Rasa DIET  on the four benchmarks included. It splits two benchmarks with Rasa on LMF (contrastive learning)
 ![VFNLU vs Other NLUs](figures/nlu_accuracy.png)
 
 ## NLU vs LLMs
@@ -52,7 +52,7 @@ Below is a comparison between both sets of benchmarks for % accuracy.
 | None intent %        | 2.8%  | 2.5%     | 0.7%      | 19.9%    |
 | Unexplained Variance | 0.8%  | 2.3%     | 4.3%      | -10.5%   |
 
-### Comparison Rasa with None intent
+### Comparison Rasa DIET with None intent
 Rasa shows minimal changes in accuracy between the base dataset and one with explicit None examples. Rasa in one case performs better with a None intent which is quite strange.
 ![RasaNone](figures/Rasa_accuracy.png)
 
@@ -63,6 +63,19 @@ Rasa shows minimal changes in accuracy between the base dataset and one with exp
 | Difference           | 1.3%  | 0.2%     | -2.7%     | 1.8%     |
 | None intent %        | 1.6%  | 0.4%     | 0.4%      | 3.9%     |
 | Unexplained Variance | -0.3% | -0.2%    | - 3.1%    | -2.1%    |
+
+### Comparison Rasa LMF with None intent
+Rasa LMF is a transformer based model using contrastive learning and a t5 encoder model. It performs better than the original Rasa DIET model and has smaller final models with a logistic regression head.
+However the pipeline is still monolingual and does not support entities out of the box.
+![RasaNone](figures/Rasa_t5_accuracy.png)
+
+| Dataset              | HWU64 | CLINC150 | Banking77 | CureKart |
+|----------------------|-------|----------|-----------|----------|
+| Rasa Base            | 77.8% | 89.0%    | 79.7%     | 83.8%    |
+| Rasa None            | 76.4% | 88.6%    | 79.6%     | 78.9%    |
+| Difference           | 1.4%  | 0.4%     | -0.1%     | 3.9%     |
+| None intent %        | 3.1%  | 0.8%     | 0.3%      | 6.8%     |
+| Unexplained Variance | -1.7% | -0.4%    | -0.2%     | -2.9%    |
 
 ### Comparison DFCX with Enriched Default Negative Intent 
 Dialogflow CX is quite sensitive when enriching their built in None Intent (called Default Negative Intent). For DFCX many of the mismatches seem to be redirected to the None intent which is an interesting pattern.
